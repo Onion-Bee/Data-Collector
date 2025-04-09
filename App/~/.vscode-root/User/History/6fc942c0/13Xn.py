@@ -2,7 +2,6 @@ import pygame
 import random
 import time
 import csv
-import json
 from datetime import datetime
 import tkinter as tk
 from tkinter import ttk
@@ -20,6 +19,7 @@ def submit_info():
         info_status_label.config(text="Please enter name, age, and gender.", foreground="red")
         return
     
+    # Save info to CSV file
     kid_info = {
         "name": name,
         "age": age,
@@ -39,8 +39,9 @@ def submit_info():
             writer.writerow(kid_info)
     
     info_status_label.config(text="Info saved! Starting M-CHAT-RF...", foreground="green")
-    root.after(1000, root.destroy)  # Close after 1 second
+    root.after(1000, root.destroy)  # Close the window after a second
 
+# Create Tkinter window for kid's info
 root = tk.Tk()
 root.title("Enter Kid's Information")
 root.geometry("300x250")
@@ -70,199 +71,185 @@ root.mainloop()
 # Phase 2: M-CHAT-RF Screening
 ##########################################
 
-# Define 20 illustrative M-CHAT-RF initial screening questions
+# We define a list of initial screening questions.
+# For simplicity, we assume the expected answer is "Yes".
+# A "No" answer counts as a risk (red flag).
 initial_questions = [
-    "1. Does your child enjoy being read to?",
-    "2. Does your child smile at you?",
-    "3. Does your child respond when you call their name?",
-    "4. Does your child point to objects to show interest?",
-    "5. Does your child engage in pretend play?",
-    "6. Does your child make eye contact?",
-    "7. Does your child use gestures, such as waving?",
-    "8. Does your child imitate adult actions?",
-    "9. Does your child enjoy social games?",
-    "10. Does your child react typically to loud sounds?",
-    "11. Does your child have a favorite toy that they seek out?",
-    "12. Does your child use their hands to communicate?",
-    "13. Does your child show interest in other children?",
-    "14. Does your child respond to facial expressions?",
-    "15. Does your child try to share enjoyment with you?",
-    "16. Does your child show varied facial expressions?",
-    "17. Does your child use single words to communicate?",
-    "18. Does your child understand simple instructions?",
-    "19. Does your child engage in repetitive movements?",
-    "20. Does your child show distress with changes in routine?"
+    "Does your child enjoy social games?",
+    "Does your child make eye contact with you?",
+    "Does your child imitate adults?",
+    "Does your child engage in pretend play?",
+    "Does your child respond when you call their name?"
 ]
 
-# Set initial screening threshold (e.g. if 3 or more red flags, follow-up is needed)
-initial_threshold = 3
+# Threshold: if red flags (i.e. "No" answers) are >= threshold, then follow-up screening is needed.
+initial_threshold = 2
 
-# Define follow-up questions (illustrative examples; you may add more)
+# We'll also define a list for follow-up screening questions.
 followup_questions = [
-    "Follow-Up 1: Does your child have difficulty understanding instructions?",
-    "Follow-Up 2: Does your child seem unusually withdrawn in social settings?",
-    "Follow-Up 3: Does your child repeat phrases or words over and over?"
+    "Does your child have difficulty understanding simple instructions?",
+    "Does your child show limited interest in social interactions?"
 ]
-followup_threshold = 1  # If at least one red flag on follow-up, outcome shifts
+followup_threshold = 1  # if at least one "No" on follow-up
 
-# Dictionaries to store answers
+# We'll store answers in dictionaries.
 mchat_initial_answers = {}
 mchat_followup_answers = {}
 
 def submit_initial():
+    # Count red flag responses in the initial screening.
     red_flags = 0
     for i in range(len(initial_questions)):
-        answer = initial_var_list[i].get()
+        answer = var_list[i].get()
         mchat_initial_answers[f"Q{i+1}"] = answer
         if answer == "No":
             red_flags += 1
             
-    initial_result_label.config(text=f"Red flags: {red_flags}")
+    initial_score_label.config(text=f"Red flags: {red_flags}")
+    # Save initial answers temporarily (could be saved later along with followup below)
     window_initial.destroy()
     
+    # If red flags meet threshold, start followup screening; otherwise, record result.
     if red_flags >= initial_threshold:
         show_followup()
     else:
+        # Save M-CHAT results
         outcome = "Pass"
-        save_mchat_results(red_flags, None, outcome, mchat_initial_answers, None)
+        save_mchat_results(red_flags, None, outcome)
+        window_initial.quit()  # close loop if needed
 
 def submit_followup():
     red_flags_followup = 0
     for i in range(len(followup_questions)):
-        answer = followup_var_list[i].get()
+        answer = followup_vars[i].get()
         mchat_followup_answers[f"Followup_Q{i+1}"] = answer
         if answer == "No":
             red_flags_followup += 1
-            
-    followup_result_label.config(text=f"Follow-up red flags: {red_flags_followup}")
+    followup_score_label.config(text=f"Follow-up red flags: {red_flags_followup}")
     window_followup.destroy()
     
-    # Determine outcome based on follow-up responses.
+    # Determine final outcome based on follow-up:
     if red_flags_followup >= followup_threshold:
         outcome = "High Risk"
     else:
         outcome = "Moderate Risk"
+    # Save M-CHAT results: combine initial and followup
     save_mchat_results(sum(1 for a in mchat_initial_answers.values() if a=="No"),
                        red_flags_followup,
-                       outcome,
-                       mchat_initial_answers,
-                       mchat_followup_answers)
+                       outcome)
 
-def save_mchat_results(initial_red_flags, followup_red_flags, outcome, initial_ans, followup_ans):
+def save_mchat_results(initial_red_flags, followup_red_flags, outcome):
+    # Save results to CSV
     csv_file = "mchat_results.csv"
     result = {
         "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "initial_red_flags": initial_red_flags,
         "followup_red_flags": followup_red_flags if followup_red_flags is not None else "",
-        "outcome": outcome,
-        "initial_answers": json.dumps(initial_ans),
-        "followup_answers": json.dumps(followup_ans) if followup_ans is not None else ""
+        "outcome": outcome
     }
     try:
         with open(csv_file, 'x', newline='') as f:
-            writer = csv.DictWriter(f, fieldnames=["timestamp", "initial_red_flags", "followup_red_flags", "outcome", "initial_answers", "followup_answers"])
+            writer = csv.DictWriter(f, fieldnames=["timestamp", "initial_red_flags", "followup_red_flags", "outcome"])
             writer.writeheader()
             writer.writerow(result)
     except FileExistsError:
         with open(csv_file, 'a', newline='') as f:
-            writer = csv.DictWriter(f, fieldnames=["timestamp", "initial_red_flags", "followup_red_flags", "outcome", "initial_answers", "followup_answers"])
+            writer = csv.DictWriter(f, fieldnames=["timestamp", "initial_red_flags", "followup_red_flags", "outcome"])
             writer.writerow(result)
-    print("M-CHAT-RF results saved:", result)
+    print(f"M-CHAT results saved: {result}")
 
 def show_initial():
-    global window_initial, initial_var_list, initial_result_label
+    global window_initial, var_list, initial_score_label
     window_initial = tk.Tk()
     window_initial.title("M-CHAT-RF Screening (Initial)")
-    window_initial.geometry("500x600")
+    window_initial.geometry("400x400")
     
-    # Create a canvas and scrollbar for scrolling the questions
-    canvas = tk.Canvas(window_initial, width=480, height=550)
-    canvas.pack(side="left", fill="both", expand=True)
-    
-    scrollbar = ttk.Scrollbar(window_initial, orient="vertical", command=canvas.yview)
-    scrollbar.pack(side="right", fill="y")
-    
-    canvas.configure(yscrollcommand=scrollbar.set)
-    canvas.bind('<Configure>', lambda e: canvas.configure(scrollregion=canvas.bbox("all")))
-    
-    # Create a frame to hold the questions inside the canvas
-    frame = ttk.Frame(canvas)
-    canvas.create_window((0,0), window=frame, anchor="nw")
-    
-    ttk.Label(frame, text="Answer the following questions (Yes/No):", wraplength=460).pack(pady=10)
-    initial_var_list = []
+    ttk.Label(window_initial, text="Please answer the questions below (Yes/No):", wraplength=380).pack(pady=10)
+    var_list = []
     for i, question in enumerate(initial_questions):
-        q_frame = ttk.Frame(frame)
-        q_frame.pack(fill="x", padx=10, pady=3)
-        ttk.Label(q_frame, text=question, wraplength=450).pack(side="top", anchor="w")
-        var = tk.StringVar(value="Yes")
-        initial_var_list.append(var)
-        options_frame = ttk.Frame(q_frame)
-        options_frame.pack(side="top", anchor="w", padx=20)
-        ttk.Radiobutton(options_frame, text="Yes", variable=var, value="Yes").pack(side="left")
-        ttk.Radiobutton(options_frame, text="No", variable=var, value="No").pack(side="left")
-    
-    initial_result_label = ttk.Label(frame, text="Red flags: 0")
-    initial_result_label.pack(pady=5)
-    
-    submit_initial_button = ttk.Button(frame, text="Submit Answers", command=submit_initial)
-    submit_initial_button.pack(pady=15)
-    
-    window_initial.mainloop()
-
-def show_followup():
-    global window_followup, followup_var_list, followup_result_label
-    window_followup = tk.Tk()
-    window_followup.title("M-CHAT-RF Screening (Follow-Up)")
-    window_followup.geometry("500x400")
-    
-    ttk.Label(window_followup, text="Follow-Up Questions (Yes/No):", wraplength=480).pack(pady=10)
-    followup_var_list = []
-    for i, question in enumerate(followup_questions):
-        frame = ttk.Frame(window_followup)
+        frame = ttk.Frame(window_initial)
         frame.pack(fill="x", padx=10, pady=5)
-        ttk.Label(frame, text=question, wraplength=450).pack(side="top", anchor="w")
+        ttk.Label(frame, text=f"{i+1}. {question}", wraplength=350).pack(side="top", anchor="w")
+        # Variable for the answer of question i
         var = tk.StringVar(value="Yes")
-        followup_var_list.append(var)
+        var_list.append(var)
+        # Options: Yes and No using Radiobuttons
         options_frame = ttk.Frame(frame)
         options_frame.pack(side="top", anchor="w", padx=20)
         ttk.Radiobutton(options_frame, text="Yes", variable=var, value="Yes").pack(side="left")
         ttk.Radiobutton(options_frame, text="No", variable=var, value="No").pack(side="left")
     
-    followup_result_label = ttk.Label(window_followup, text="Follow-up red flags: 0")
-    followup_result_label.pack(pady=5)
+    initial_score_label = ttk.Label(window_initial, text="Red flags: 0")
+    initial_score_label.pack(pady=5)
+    
+    submit_initial_button = ttk.Button(window_initial, text="Submit Answers", command=submit_initial)
+    submit_initial_button.pack(pady=20)
+    
+    window_initial.mainloop()
+
+def show_followup():
+    global window_followup, followup_vars, followup_score_label
+    window_followup = tk.Tk()
+    window_followup.title("M-CHAT-RF Screening (Follow-Up)")
+    window_followup.geometry("400x300")
+    
+    ttk.Label(window_followup, text="Follow-Up Questions (Yes/No):", wraplength=380).pack(pady=10)
+    followup_vars = []
+    for i, question in enumerate(followup_questions):
+        frame = ttk.Frame(window_followup)
+        frame.pack(fill="x", padx=10, pady=5)
+        ttk.Label(frame, text=f"{i+1}. {question}", wraplength=350).pack(side="top", anchor="w")
+        var = tk.StringVar(value="Yes")
+        followup_vars.append(var)
+        options_frame = ttk.Frame(frame)
+        options_frame.pack(side="top", anchor="w", padx=20)
+        ttk.Radiobutton(options_frame, text="Yes", variable=var, value="Yes").pack(side="left")
+        ttk.Radiobutton(options_frame, text="No", variable=var, value="No").pack(side="left")
+        
+    followup_score_label = ttk.Label(window_followup, text="Follow-up red flags: 0")
+    followup_score_label.pack(pady=5)
     
     submit_followup_button = ttk.Button(window_followup, text="Submit Follow-Up Answers", command=submit_followup)
-    submit_followup_button.pack(pady=15)
+    submit_followup_button.pack(pady=20)
     
     window_followup.mainloop()
 
-# Launch the initial M-CHAT-RF screening window.
+# First, show the initial M-CHAT screening window.
 show_initial()
 
 ##########################################
 # Phase 3: Bubble Pop Game using Pygame
 ##########################################
 
+# Initialize Pygame
 pygame.init()
 
+# Screen settings
 WIDTH, HEIGHT = 800, 600
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Bubble Pop Game")
 
+# Colors for the game
 WHITE = (255, 255, 255)
 BLUE = (0, 100, 255)
 BLACK = (0, 0, 0)
 
+# Font setup for score
 pygame.font.init()
 font = pygame.font.SysFont("Arial", 28)
 
+# Bubble list and logs for reaction times
 bubbles = []
 reaction_data = []
+
+# Score variable
 score = 0
+
+# Clock for controlling the game's framerate
 clock = pygame.time.Clock()
 
-BUBBLE_INTERVAL = 1500  # milliseconds
+# Constants for bubble generation and lifespan
+BUBBLE_INTERVAL = 1500  # milliseconds between bubbles
 BUBBLE_LIFESPAN = 3     # seconds
 
 class Bubble:
@@ -280,6 +267,7 @@ class Bubble:
         dist = ((self.x - pos[0]) ** 2 + (self.y - pos[1]) ** 2) ** 0.5
         return dist <= self.radius
 
+# Game loop
 running = True
 last_bubble_time = pygame.time.get_ticks()
 
@@ -287,11 +275,13 @@ while running:
     screen.fill(WHITE)
     current_time = pygame.time.get_ticks()
     now = time.time()
-    
+
+    # Generate new bubble periodically
     if current_time - last_bubble_time > BUBBLE_INTERVAL:
         bubbles.append(Bubble())
         last_bubble_time = current_time
 
+    # Draw and update bubbles; check for missed bubbles
     for bubble in bubbles[:]:
         bubble.draw()
         if not bubble.is_popped and now - bubble.appear_time > BUBBLE_LIFESPAN:
@@ -306,6 +296,7 @@ while running:
             print(f"Missed bubble at ({bubble.x}, {bubble.y})")
             bubbles.remove(bubble)
 
+    # Handle input for mouse and touch
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
@@ -333,14 +324,16 @@ while running:
                     bubble.is_popped = True
                     bubbles.remove(bubble)
 
+    # Render score on screen
     score_text = font.render(f"Score: {score}", True, BLACK)
     screen.blit(score_text, (10, 10))
-    
+
     pygame.display.flip()
     clock.tick(60)
 
 pygame.quit()
 
+# Save game reaction data to CSV after the game ends
 csv_file = "reaction_times.csv"
 with open(csv_file, mode='w', newline='') as file:
     writer = csv.DictWriter(file, fieldnames=["x", "y", "reaction_time_sec", "timestamp", "status"])

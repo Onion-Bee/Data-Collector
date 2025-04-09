@@ -175,37 +175,23 @@ def show_initial():
     window_initial.title("M-CHAT-RF Screening (Initial)")
     window_initial.geometry("500x600")
     
-    # Create a canvas and scrollbar for scrolling the questions
-    canvas = tk.Canvas(window_initial, width=480, height=550)
-    canvas.pack(side="left", fill="both", expand=True)
-    
-    scrollbar = ttk.Scrollbar(window_initial, orient="vertical", command=canvas.yview)
-    scrollbar.pack(side="right", fill="y")
-    
-    canvas.configure(yscrollcommand=scrollbar.set)
-    canvas.bind('<Configure>', lambda e: canvas.configure(scrollregion=canvas.bbox("all")))
-    
-    # Create a frame to hold the questions inside the canvas
-    frame = ttk.Frame(canvas)
-    canvas.create_window((0,0), window=frame, anchor="nw")
-    
-    ttk.Label(frame, text="Answer the following questions (Yes/No):", wraplength=460).pack(pady=10)
+    ttk.Label(window_initial, text="Answer the following questions (Yes/No):", wraplength=480).pack(pady=10)
     initial_var_list = []
     for i, question in enumerate(initial_questions):
-        q_frame = ttk.Frame(frame)
-        q_frame.pack(fill="x", padx=10, pady=3)
-        ttk.Label(q_frame, text=question, wraplength=450).pack(side="top", anchor="w")
+        frame = ttk.Frame(window_initial)
+        frame.pack(fill="x", padx=10, pady=3)
+        ttk.Label(frame, text=question, wraplength=450).pack(side="top", anchor="w")
         var = tk.StringVar(value="Yes")
         initial_var_list.append(var)
-        options_frame = ttk.Frame(q_frame)
+        options_frame = ttk.Frame(frame)
         options_frame.pack(side="top", anchor="w", padx=20)
         ttk.Radiobutton(options_frame, text="Yes", variable=var, value="Yes").pack(side="left")
         ttk.Radiobutton(options_frame, text="No", variable=var, value="No").pack(side="left")
     
-    initial_result_label = ttk.Label(frame, text="Red flags: 0")
+    initial_result_label = ttk.Label(window_initial, text="Red flags: 0")
     initial_result_label.pack(pady=5)
     
-    submit_initial_button = ttk.Button(frame, text="Submit Answers", command=submit_initial)
+    submit_initial_button = ttk.Button(window_initial, text="Submit Answers", command=submit_initial)
     submit_initial_button.pack(pady=15)
     
     window_initial.mainloop()
