@@ -1,0 +1,20 @@
+2025-04-09 19:22:05.796 [info] Experiment 'pythonaa' is active
+2025-04-09 19:22:05.796 [info] Experiment 'pythonRecommendTensorboardExt' is active
+2025-04-09 19:22:05.796 [info] Experiment 'pythonTerminalEnvVarActivation' is active
+2025-04-09 19:22:05.796 [warning] Dir "/root/Desktop/Environments/App/.pixi/envs" is not watchable (directory does not exist)
+2025-04-09 19:22:05.796 [info] Python interpreter path: ./venv/bin/python
+2025-04-09 19:22:05.856 [info] > pyenv which python
+2025-04-09 19:22:05.856 [info] cwd: .
+2025-04-09 19:22:06.079 [info] > . ./venv/bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/printEnvVariables.py
+2025-04-09 19:22:06.079 [info] shell: zsh
+2025-04-09 19:22:06.110 [info] > /bin/python ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/printEnvVariables.py
+2025-04-09 19:22:06.110 [info] shell: zsh
+2025-04-09 19:22:06.158 [info] Prepending environment variable PATH in collection with /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/deactivate/zsh:/root/Desktop/Environments/App/bin: {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2025-04-09 19:22:06.158 [info] Setting environment variable VIRTUAL_ENV in collection to /root/Desktop/Environments/App {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2025-04-09 19:22:06.158 [info] Setting environment variable VIRTUAL_ENV_PROMPT in collection to App {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2025-04-09 19:22:06.158 [info] Prepending environment variable PS1 in collection with App {"applyAtShellIntegration":true,"applyAtProcessCreation":false}
+2025-04-09 19:22:06.158 [info] Send text to terminal: /bin/python /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/printEnvVariablesToFile.py /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/deactivate/zsh/envVars.txt
+2025-04-09 19:22:07.959 [info] Starting Pylance language server.
+2025-04-09 19:22:08.682 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/game.py
+2025-04-09 19:25:57.765 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/game.py
+2025-04-09 19:25:58.146 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/game.py

@@ -9,11 +9,7 @@
                 "folderUri": "file:///root/Desktop/Environments/App"
             }
         ],
-        "emptyWindows": [
-            {
-                "backupFolder": "1744183063085"
-            }
-        ]
+        "emptyWindows": []
     },
     "windowControlHeight": 35,
     "profileAssociations": {

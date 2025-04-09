@@ -1,0 +1,4 @@
+2025-04-09 19:22:04.333 [info] Marked extension as removed ms-python.debugpy-2025.4.1
+2025-04-09 19:22:04.333 [info] Marked extension as removed ms-python.python-2025.2.0
+2025-04-09 19:22:04.479 [info] Deleted marked for removal extension from disk ms-python.debugpy /root/.vscode/extensions/ms-python.debugpy-2025.4.1-linux-x64
+2025-04-09 19:22:04.481 [info] Deleted marked for removal extension from disk ms-python.python /root/.vscode/extensions/ms-python.python-2025.2.0-linux-x64
