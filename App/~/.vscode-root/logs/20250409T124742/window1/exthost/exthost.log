@@ -1,0 +1,39 @@
+2025-04-09 12:47:43.769 [info] Extension host with pid 56026 started
+2025-04-09 12:47:43.873 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-04-09 12:47:43.934 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-04-09 12:47:43.940 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-04-09 12:47:43.991 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-04-09 12:47:44.078 [info] Eager extensions activated
+2025-04-09 12:47:44.085 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-04-09 12:47:44.088 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-04-09 12:47:59.432 [info] Extension host terminating: renderer closed the MessagePort
+2025-04-09 12:47:59.443 [info] Extension host with pid 56026 exiting with code 0
+2025-04-09 12:48:00.321 [info] Extension host with pid 56327 started
+2025-04-09 12:48:00.321 [info] Skipping acquiring lock for /root/Desktop/Environments/App/App/~/.vscode-root/User/workspaceStorage/613d6a61091fa8c02d4b3c399d99eab8.
+2025-04-09 12:48:00.354 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-04-09 12:48:00.411 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+2025-04-09 12:48:00.413 [info] ExtensionService#_doActivateExtension ms-python.python, startup: true, activationEvent: 'workspaceContains:requirements.txt'
+2025-04-09 12:48:00.619 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-04-09 12:48:02.408 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: vscode.github
+2025-04-09 12:48:02.628 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-04-09 12:48:06.671 [error] Activating extension ms-python.python failed due to an error:
+2025-04-09 12:48:06.671 [error] Error: command 'python.viewOutput' already exists
+	at vw.registerCommand (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:40253)
+	at Object.registerCommand (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:173:29591)
+	at s.registerCommand (/root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:103696)
+	at /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:450893
+	at async t.activateComponents (/root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:449857)
+	at async /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:2642625
+	at async e (/root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:2642157)
+	at async cw.n (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:13415)
+	at async cw.m (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:13378)
+	at async cw.l (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:12834)
+2025-04-09 12:48:06.671 [info] Eager extensions activated
+2025-04-09 12:48:06.680 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-04-09 12:48:06.681 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-04-09 12:48:07.675 [error] Error: Cannot activate the 'Pylance' extension because its dependency 'Python' failed to activate
+	at cw.m (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:13076)
+	at async cw.l (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:12834)
+2025-04-09 12:48:07.828 [info] ExtensionService#_doActivateExtension VisualStudioExptTeam.intellicode-api-usage-examples, startup: false, activationEvent: 'onLanguage:python'
+2025-04-09 12:48:07.993 [info] ExtensionService#_doActivateExtension VisualStudioExptTeam.vscodeintellicode, startup: false, activationEvent: 'onLanguage:python'
+2025-04-09 12:48:23.224 [info] ExtensionService#_doActivateExtension mechatroner.rainbow-csv, startup: false, activationEvent: 'onLanguage:plaintext'

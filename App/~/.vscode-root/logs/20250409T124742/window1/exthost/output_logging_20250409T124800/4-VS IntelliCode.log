@@ -1,0 +1,1 @@
+Error while activating Python: {"detail":{"name":"Error","message":"Activating extension 'ms-python.python' failed: command 'python.viewOutput' already exists."}}

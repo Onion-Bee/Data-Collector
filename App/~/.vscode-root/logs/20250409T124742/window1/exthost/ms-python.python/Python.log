@@ -1,0 +1,230 @@
+2025-04-09 12:48:03.193 [info] Experiment 'pythonaa' is active
+2025-04-09 12:48:03.193 [info] Experiment 'pythonRecommendTensorboardExt' is active
+2025-04-09 12:48:03.193 [info] Experiment 'pythonTerminalEnvVarActivation' is active
+2025-04-09 12:48:03.208 [warning] Dir "/root/Desktop/Environments/App/.pixi/envs" is not watchable (directory does not exist)
+2025-04-09 12:48:03.238 [info] Starting Environment refresh
+2025-04-09 12:48:03.238 [info] Searching for interpreters in posix paths locator
+2025-04-09 12:48:03.244 [info] Searching for pyenv environments
+2025-04-09 12:48:03.244 [info] Searching for conda environments
+2025-04-09 12:48:03.244 [info] Searching for global virtual environments
+2025-04-09 12:48:03.244 [info] Searching for custom virtual environments
+2025-04-09 12:48:03.250 [info] pyenv is not installed
+2025-04-09 12:48:03.250 [info] Finished searching for pyenv environments: 10 milliseconds
+2025-04-09 12:48:03.250 [info] Finished searching for custom virtual envs: 9 milliseconds
+2025-04-09 12:48:03.257 [info] > conda info --json
+2025-04-09 12:48:03.263 [info] > hatch env show --json
+2025-04-09 12:48:03.263 [info] cwd: .
+2025-04-09 12:48:03.269 [info] > pyenv which python
+2025-04-09 12:48:03.269 [info] cwd: .
+2025-04-09 12:48:03.270 [info] Finished searching for global virtual envs: 30 milliseconds
+2025-04-09 12:48:03.279 [info] Found: /bin/python --> /bin/python3.13
+2025-04-09 12:48:03.280 [info] Found: /bin/python2 --> /bin/python2.7
+2025-04-09 12:48:03.280 [info] Found: /bin/python2.7 --> /bin/python2.7
+2025-04-09 12:48:03.281 [info] Found: /bin/python3 --> /bin/python3.13
+2025-04-09 12:48:03.282 [info] Found: /bin/python3.12 --> /bin/python3.12
+2025-04-09 12:48:03.282 [info] Found: /bin/python3.13 --> /bin/python3.13
+2025-04-09 12:48:03.295 [info] > ./venv/bin/python -I ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/interpreterInfo.py
+2025-04-09 12:48:03.299 [info] Found: /usr/bin/python --> /usr/bin/python3.13
+2025-04-09 12:48:03.299 [info] Found: /usr/bin/python2 --> /usr/bin/python2.7
+2025-04-09 12:48:03.299 [info] Found: /usr/bin/python2.7 --> /usr/bin/python2.7
+2025-04-09 12:48:03.299 [info] Found: /usr/bin/python3 --> /usr/bin/python3.13
+2025-04-09 12:48:03.300 [info] Found: /usr/bin/python3.12 --> /usr/bin/python3.12
+2025-04-09 12:48:03.300 [info] Found: /usr/bin/python3.13 --> /usr/bin/python3.13
+2025-04-09 12:48:03.317 [info] > /bin/python -I ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/interpreterInfo.py
+2025-04-09 12:48:03.330 [info] > /bin/python2 -I ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/interpreterInfo.py
+2025-04-09 12:48:03.343 [info] > /bin/python3.12 -I ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/interpreterInfo.py
+2025-04-09 12:48:03.344 [warning] [Error: Command failed: /bin/python2 -I /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/get_output_via_markers.py /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/interpreterInfo.py
+Unknown option: -I
+usage: /bin/python2 [option] ... [-c cmd | -m mod | file | -] [arg] ...
+Try `python -h' for more information.
+
+	at genericNodeError (node:internal/errors:984:15)
+	at wrappedFn (node:internal/errors:538:14)
+	at ChildProcess.exithandler (node:child_process:423:12)
+	at ChildProcess.emit (node:events:530:35)
+	at maybeClose (node:internal/child_process:1104:16)
+	at Socket.<anonymous> (node:internal/child_process:456:11)
+	at Socket.emit (node:events:518:28)
+	at Pipe.<anonymous> (node:net:343:12)] {
+  code: 2,
+  killed: false,
+  signal: null,
+  cmd: '/bin/python2 -I /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/get_output_via_markers.py /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/interpreterInfo.py'
+}
+2025-04-09 12:48:03.344 [error] Support for Python 2.7 has been dropped by the Python extension so certain features may not work, upgrade to using Python 3.
+2025-04-09 12:48:03.350 [info] > /bin/python2 ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/interpreterInfo.py
+2025-04-09 12:48:03.357 [info] > /usr/bin/python -I ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/interpreterInfo.py
+2025-04-09 12:48:03.362 [info] Finished searching for interpreters in posix paths locator: 124 milliseconds
+2025-04-09 12:48:03.368 [info] Environments refresh paths discovered (event): 132 milliseconds
+2025-04-09 12:48:03.368 [info] Environments refresh paths discovered: 132 milliseconds
+2025-04-09 12:48:03.394 [info] > /usr/bin/python2 -I ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/interpreterInfo.py
+2025-04-09 12:48:03.400 [info] > /usr/bin/python3.12 -I ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/interpreterInfo.py
+2025-04-09 12:48:03.401 [warning] [Error: Command failed: /usr/bin/python2 -I /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/get_output_via_markers.py /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/interpreterInfo.py
+Unknown option: -I
+usage: /usr/bin/python2 [option] ... [-c cmd | -m mod | file | -] [arg] ...
+Try `python -h' for more information.
+
+	at genericNodeError (node:internal/errors:984:15)
+	at wrappedFn (node:internal/errors:538:14)
+	at ChildProcess.exithandler (node:child_process:423:12)
+	at ChildProcess.emit (node:events:530:35)
+	at maybeClose (node:internal/child_process:1104:16)
+	at Socket.<anonymous> (node:internal/child_process:456:11)
+	at Socket.emit (node:events:518:28)
+	at Pipe.<anonymous> (node:net:343:12)] {
+  code: 2,
+  killed: false,
+  signal: null,
+  cmd: '/usr/bin/python2 -I /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/get_output_via_markers.py /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/interpreterInfo.py'
+}
+2025-04-09 12:48:03.401 [error] Support for Python 2.7 has been dropped by the Python extension so certain features may not work, upgrade to using Python 3.
+2025-04-09 12:48:03.408 [info] > /usr/bin/python2 ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/interpreterInfo.py
+2025-04-09 12:48:03.434 [info] Environments refresh finished (event): 198 milliseconds
+2025-04-09 12:48:03.441 [info] Environment refresh took 205 milliseconds
+2025-04-09 12:48:03.451 [info] Python interpreter path: ./venv/bin/python
+2025-04-09 12:48:03.702 [info] Shell integration status changed, can confirm it's working.
+2025-04-09 12:48:03.708 [info] > . ./venv/bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/printEnvVariables.py
+2025-04-09 12:48:03.708 [info] shell: zsh
+2025-04-09 12:48:03.738 [info] > /bin/python ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/printEnvVariables.py
+2025-04-09 12:48:03.738 [info] shell: zsh
+2025-04-09 12:48:03.764 [info] Prepending environment variable PATH in collection with /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/deactivate/zsh:/root/Desktop/Environments/App/bin: {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2025-04-09 12:48:03.764 [info] Setting environment variable VIRTUAL_ENV in collection to /root/Desktop/Environments/App {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2025-04-09 12:48:03.764 [info] Setting environment variable VIRTUAL_ENV_PROMPT in collection to App {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2025-04-09 12:48:03.764 [info] Prepending environment variable PS1 in collection with App {"applyAtShellIntegration":true,"applyAtProcessCreation":false}
+2025-04-09 12:48:03.766 [info] Send text to terminal: /bin/python /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/printEnvVariablesToFile.py /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/deactivate/zsh/envVars.txt
+2025-04-09 12:48:04.453 [info] > . ./venv/bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/printEnvVariables.py
+2025-04-09 12:48:04.453 [info] shell: zsh
+2025-04-09 12:48:04.479 [info] Prepending environment variable PATH in collection with /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/deactivate/zsh:/root/Desktop/Environments/App/bin: {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2025-04-09 12:48:04.479 [info] Setting environment variable VIRTUAL_ENV in collection to /root/Desktop/Environments/App {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2025-04-09 12:48:04.479 [info] Setting environment variable VIRTUAL_ENV_PROMPT in collection to App {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2025-04-09 12:48:04.479 [info] Prepending environment variable PS1 in collection with App {"applyAtShellIntegration":true,"applyAtProcessCreation":false}
+2025-04-09 12:48:06.655 [info] Experiment 'pythonaa' is active
+2025-04-09 12:48:06.655 [info] Experiment 'pythonRecommendTensorboardExt' is active
+2025-04-09 12:48:06.655 [info] Experiment 'pythonTerminalEnvVarActivation' is active
+2025-04-09 12:48:06.657 [warning] Dir "/root/Desktop/Environments/App/.pixi/envs" is not watchable (directory does not exist)
+2025-04-09 12:48:06.669 [error] extension activation failed [Error: command 'python.viewOutput' already exists
+	at vw.registerCommand (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:40253)
+	at Object.registerCommand (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:173:29591)
+	at s.registerCommand (/root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:103696)
+	at /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:450893
+	at async t.activateComponents (/root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:449857)
+	at async /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:2642625
+	at async e (/root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:2642157)
+	at async cw.n (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:13415)
+	at async cw.m (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:13378)
+	at async cw.l (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:12834)]
+2025-04-09 12:48:06.672 [error] [
+  `Failed to start language server, Class name = h, completed in 3224ms, has a falsy return value, Arg 1: <Uri:/root/Desktop/Environments/App>, Arg 2: {"id":"/root/Desktop/Environments/App/venv/bin/python","sysPrefix":"/root/Desktop/Environments/App/venv","envType":"Venv","envName":"venv","envPath":"/root/Desktop/Environments/App/venv","path":"/root/Desktop/Environments/App/venv/bin/python","architecture":3,"sysVersion":"3.13.2 (main, Mar 13 2025, 14:29:07) [GCC 14.2.0]","version":{"raw":"3.13.2","major":3,"minor":13,"patch":2,"build":[],"prerelease":["final","0"]},"displayName":"Python 3.13.2 ('venv')","detailedDisplayName":"Python 3.13.2 ('venv': venv)","type":"Virtual"}, Arg 3: {"documentSelector":[{"scheme":"file","language":"python"},{"scheme":"untitled","language":"python"},{"scheme":"vscode-notebook","language":"python"},{"scheme":"vscode-notebook-cell","language":"python"},{"scheme":"vscode-interactive-input","language":"python"}],"synchronize":{"configurationSection":["python","jupyter.runStartupCommands"]},"outputChannel":{"name":"Python Language Server","logLevel":3},"revealOutputChannelOn":4,"initializationOptions":{"experimentationSupport":true,"trustedWorkspaceSupport":true},"middleware":{"serviceContainer":{"container":{"options":{"autoBindInjectable":false,"defaultScope":"Transient","skipBaseClassChecks":true},"id":130,"_bindingDictionary":{"_map":{}},"_snapshots":[],"_middleware":null,"_activations":{"_map":{}},"_deactivations":{"_map":{}},"parent":null,"_metadataReader":{},"_moduleActivationStore":{"_map":{}}}},"serverVersion":"2025.4.1","lastCaptured":{},"nextWindow":0,"eventCount":0,"workspace":{},"connectedPromise":{"scope":null,"_resolved":false,"_rejected":false,"_promise":{}},"notebooks":{},"eventName":"LANGUAGE_SERVER.REQUEST"}}, Return Value: undefined`,
+  [Error: Cannot activate the 'Pylance' extension because its dependency 'Python' failed to activate
+  	at cw.m (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:13076)
+  	at async cw.l (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:12834)] {
+    detail: [Error: command 'python.viewOutput' already exists
+    	at vw.registerCommand (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:40253)
+    	at Object.registerCommand (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:173:29591)
+    	at s.registerCommand (/root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:103696)
+    	at /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:450893
+    	at async t.activateComponents (/root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:449857)
+    	at async /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:2642625
+    	at async e (/root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:2642157)
+    	at async cw.n (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:13415)
+    	at async cw.m (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:13378)
+    	at async cw.l (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:12834)] {
+      message: "Activating extension 'ms-python.python' failed: command 'python.viewOutput' already exists."
+    }
+  }
+]
+2025-04-09 12:48:06.673 [error] [
+  'Starting language server, Class name = p, completed in 3224ms, has a falsy return value, , Return Value: undefined',
+  [Error: Cannot activate the 'Pylance' extension because its dependency 'Python' failed to activate
+  	at cw.m (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:13076)
+  	at async cw.l (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:12834)] {
+    detail: [Error: command 'python.viewOutput' already exists
+    	at vw.registerCommand (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:40253)
+    	at Object.registerCommand (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:173:29591)
+    	at s.registerCommand (/root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:103696)
+    	at /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:450893
+    	at async t.activateComponents (/root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:449857)
+    	at async /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:2642625
+    	at async e (/root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:2642157)
+    	at async cw.n (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:13415)
+    	at async cw.m (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:13378)
+    	at async cw.l (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:12834)] {
+      message: "Activating extension 'ms-python.python' failed: command 'python.viewOutput' already exists."
+    }
+  }
+]
+2025-04-09 12:48:06.673 [error] [
+  `Failed to start language server, Class name = p, completed in 3225ms, has a falsy return value, Arg 1: <Uri:/root/Desktop/Environments/App>, Arg 2: {"id":"/root/Desktop/Environments/App/venv/bin/python","sysPrefix":"/root/Desktop/Environments/App/venv","envType":"Venv","envName":"venv","envPath":"/root/Desktop/Environments/App/venv","path":"/root/Desktop/Environments/App/venv/bin/python","architecture":3,"sysVersion":"3.13.2 (main, Mar 13 2025, 14:29:07) [GCC 14.2.0]","version":{"raw":"3.13.2","major":3,"minor":13,"patch":2,"build":[],"prerelease":["final","0"]},"displayName":"Python 3.13.2 ('venv')","detailedDisplayName":"Python 3.13.2 ('venv': venv)","type":"Virtual"}, Return Value: undefined`,
+  [Error: Cannot activate the 'Pylance' extension because its dependency 'Python' failed to activate
+  	at cw.m (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:13076)
+  	at async cw.l (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:12834)] {
+    detail: [Error: command 'python.viewOutput' already exists
+    	at vw.registerCommand (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:40253)
+    	at Object.registerCommand (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:173:29591)
+    	at s.registerCommand (/root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:103696)
+    	at /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:450893
+    	at async t.activateComponents (/root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:449857)
+    	at async /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:2642625
+    	at async e (/root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:2642157)
+    	at async cw.n (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:13415)
+    	at async cw.m (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:13378)
+    	at async cw.l (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:12834)] {
+      message: "Activating extension 'ms-python.python' failed: command 'python.viewOutput' already exists."
+    }
+  }
+]
+2025-04-09 12:48:06.673 [error] [
+  'Failed to activate a workspace, Class name = v, completed in 3438ms, has a falsy return value, Arg 1: <Uri:/root/Desktop/Environments/App>, Arg 2: {"started":1744183082327}, Return Value: undefined',
+  [Error: Cannot activate the 'Pylance' extension because its dependency 'Python' failed to activate
+  	at cw.m (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:13076)
+  	at async cw.l (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:12834)] {
+    detail: [Error: command 'python.viewOutput' already exists
+    	at vw.registerCommand (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:40253)
+    	at Object.registerCommand (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:173:29591)
+    	at s.registerCommand (/root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:103696)
+    	at /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:450893
+    	at async t.activateComponents (/root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:449857)
+    	at async /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:2642625
+    	at async e (/root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:2642157)
+    	at async cw.n (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:13415)
+    	at async cw.m (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:13378)
+    	at async cw.l (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:12834)] {
+      message: "Activating extension 'ms-python.python' failed: command 'python.viewOutput' already exists."
+    }
+  }
+]
+2025-04-09 12:48:06.673 [error] Failure during activation. [Error: Cannot activate the 'Pylance' extension because its dependency 'Python' failed to activate
+	at cw.m (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:13076)
+	at async cw.l (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:12834)] {
+  detail: [Error: command 'python.viewOutput' already exists
+  	at vw.registerCommand (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:40253)
+  	at Object.registerCommand (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:173:29591)
+  	at s.registerCommand (/root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:103696)
+  	at /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:450893
+  	at async t.activateComponents (/root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:449857)
+  	at async /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:2642625
+  	at async e (/root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:2642157)
+  	at async cw.n (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:13415)
+  	at async cw.m (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:13378)
+  	at async cw.l (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:12834)] {
+    message: "Activating extension 'ms-python.python' failed: command 'python.viewOutput' already exists."
+  }
+}
+2025-04-09 12:48:06.673 [error] sendStartupTelemetry() failed. [Error: Cannot activate the 'Pylance' extension because its dependency 'Python' failed to activate
+	at cw.m (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:13076)
+	at async cw.l (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:12834)] {
+  detail: [Error: command 'python.viewOutput' already exists
+  	at vw.registerCommand (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:40253)
+  	at Object.registerCommand (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:173:29591)
+  	at s.registerCommand (/root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:103696)
+  	at /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:450893
+  	at async t.activateComponents (/root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:449857)
+  	at async /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:2642625
+  	at async e (/root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/out/client/extension.js:2:2642157)
+  	at async cw.n (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:13415)
+  	at async cw.m (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:13378)
+  	at async cw.l (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:111:12834)] {
+    message: "Activating extension 'ms-python.python' failed: command 'python.viewOutput' already exists."
+  }
+}
+2025-04-09 12:54:06.322 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/game.py

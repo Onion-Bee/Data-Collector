@@ -32,8 +32,8 @@ score = 0
 clock = pygame.time.Clock()
 
 # Constants
-BUBBLE_INTERVAL = 1500  # milliseconds
-BUBBLE_LIFESPAN = 3  # seconds
+BUBBLE_INTERVAL = 1500  # milliseconds between bubbles
+BUBBLE_LIFESPAN = 3     # seconds
 
 class Bubble:
     def __init__(self):
@@ -47,7 +47,7 @@ class Bubble:
         pygame.draw.circle(screen, BLUE, (self.x, self.y), self.radius)
 
     def is_clicked(self, pos):
-        dist = ((self.x - pos[0])**2 + (self.y - pos[1])**2)**0.5
+        dist = ((self.x - pos[0]) ** 2 + (self.y - pos[1]) ** 2) ** 0.5
         return dist <= self.radius
 
 # Game loop
@@ -56,7 +56,6 @@ last_bubble_time = pygame.time.get_ticks()
 
 while running:
     screen.fill(WHITE)
-
     current_time = pygame.time.get_ticks()
     now = time.time()
 
@@ -65,11 +64,10 @@ while running:
         bubbles.append(Bubble())
         last_bubble_time = current_time
 
-    # Draw and update all bubbles
+    # Draw and update all bubbles, check for missed bubbles
     for bubble in bubbles[:]:
         bubble.draw()
 
-        # Check for missed bubbles
         if not bubble.is_popped and now - bubble.appear_time > BUBBLE_LIFESPAN:
             timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             reaction_data.append({
@@ -82,13 +80,19 @@ while running:
             print(f"Missed bubble at ({bubble.x}, {bubble.y})")
             bubbles.remove(bubble)
 
-    # Handle user input
+    # Handle user input for both mouse clicks and touch input
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
 
-        elif event.type == pygame.MOUSEBUTTONDOWN:
+        mouse_pos = None
+        if event.type == pygame.MOUSEBUTTONDOWN:
             mouse_pos = pygame.mouse.get_pos()
+        elif event.type == pygame.FINGERDOWN:
+            # event.x and event.y are normalized values [0.0, 1.0], so convert them to screen coordinates.
+            mouse_pos = (int(event.x * WIDTH), int(event.y * HEIGHT))
+
+        if mouse_pos is not None:
             for bubble in bubbles[:]:
                 if bubble.is_clicked(mouse_pos):
                     reaction_time = now - bubble.appear_time
@@ -100,12 +104,12 @@ while running:
                         "timestamp": timestamp,
                         "status": "popped"
                     })
-                    score += 1  # Increase score
+                    score += 1  # Increase score for a successful pop
                     print(f"Popped at ({bubble.x}, {bubble.y}) - Reaction: {reaction_time:.2f}s")
                     bubble.is_popped = True
                     bubbles.remove(bubble)
 
-    # Render score
+    # Render score on screen
     score_text = font.render(f"Score: {score}", True, BLACK)
     screen.blit(score_text, (10, 10))
 
@@ -114,7 +118,7 @@ while running:
 
 pygame.quit()
 
-# Save to CSV
+# Save game data to CSV after exiting the game loop
 csv_file = "reaction_times.csv"
 with open(csv_file, mode='w', newline='') as file:
     writer = csv.DictWriter(file, fieldnames=["x", "y", "reaction_time_sec", "timestamp", "status"])
