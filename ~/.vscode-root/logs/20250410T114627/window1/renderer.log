@@ -1,0 +1,269 @@
+2025-04-10 11:46:28.258 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.python' wants API proposal 'terminalShellType' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-04-10 11:46:28.269 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.vscode-python-envs' wants API proposal 'terminalShellType' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-04-10 11:46:28.269 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'github.copilot-chat' wants API proposal 'chatReadonlyPromptReference' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-04-10 11:46:28.414 [info] ChatSessionStore: Migrating 0 chat sessions from storage service to file system
+2025-04-10 11:46:28.582 [info] Started local extension host with pid 2229.
+2025-04-10 11:46:29.211 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-04-10 11:46:31.828 [info] [perf] Render performance baseline is 27ms
+2025-04-10 11:46:33.777 [info] [Oracle.oracle-java]: Command `workbench.action.debug.run` already registered by Java (Oracle.oracle-java)
+2025-04-10 11:46:33.777 [info] [Oracle.oracle-java]: Command `workbench.action.debug.start` already registered by Java (Oracle.oracle-java)
+2025-04-10 11:46:33.777 [info] [Oracle.oracle-java]: Command `jdk.select.editor.projects` already registered by Java (Oracle.oracle-java)
+2025-04-10 11:46:34.316 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:34.316 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:34.317 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:34.411 [error] An unknown error occurred. Please consult the log for more details.
+2025-04-10 11:46:35.452 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:35.452 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:35.456 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:35.499 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:35.500 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:35.500 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:35.500 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:35.500 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:35.500 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:35.528 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:35.946 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:35.949 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:35.964 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:35.964 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:35.964 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:35.964 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:35.965 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:35.965 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:35.991 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:36.212 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:36.213 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:36.220 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:36.220 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:38.609 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:38.663 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:38.664 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:38.664 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:38.665 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:38.665 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:38.665 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:38.704 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:39.133 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:39.133 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:39.183 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:39.183 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:39.712 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:39.713 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:41.412 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:41.412 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:45.816 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:45.852 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:45.852 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:46.128 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-04-10 11:46:57.497 [info] [Extensions]: Checking for updates. Reason: Product update
+2025-04-10 11:47:29.304 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+	at /root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+	at re (/root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+	at /root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+	at Immediate.<anonymous> (/root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+	at process.processImmediate (node:internal/timers:483:21)
+2025-04-10 11:47:30.784 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+	at /root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+	at re (/root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+	at /root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+	at Immediate.<anonymous> (/root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+	at process.processImmediate (node:internal/timers:483:21)
+2025-04-10 11:47:34.439 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+	at /root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+	at re (/root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+	at /root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+	at Immediate.<anonymous> (/root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+	at process.processImmediate (node:internal/timers:483:21)
+2025-04-10 12:12:14.493 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+	at /root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+	at re (/root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+	at /root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+	at Immediate.<anonymous> (/root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+	at process.processImmediate (node:internal/timers:483:21)
+2025-04-10 12:13:21.129 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+	at /root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+	at re (/root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+	at /root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+	at Immediate.<anonymous> (/root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+	at process.processImmediate (node:internal/timers:483:21)
+2025-04-10 12:13:24.252 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+	at /root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+	at re (/root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+	at /root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+	at Immediate.<anonymous> (/root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+	at process.processImmediate (node:internal/timers:483:21)
+2025-04-10 12:13:26.826 [error] Token length and text length do not match!: Error: Token length and text length do not match!
+    at new K5 (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:53:14549)
+    at wCi.addSparseTokens (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:250:8403)
+    at ooe.getLineTokens (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:250:10302)
+    at o5i.read (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:226:39925)
+    at RIt.peek (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:226:38614)
+    at g5i.g (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:228:4988)
+    at g5i.parseDocument (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:228:4875)
+    at rAe (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:228:4588)
+    at p5i.u (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:228:8529)
+    at p5i.t (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:228:8376)
+2025-04-10 12:13:26.826 [error] Token length and text length do not match!: Error: Token length and text length do not match!
+    at new K5 (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:53:14549)
+    at wCi.addSparseTokens (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:250:8403)
+    at ooe.getLineTokens (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:250:10302)
+    at o5i.read (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:226:39925)
+    at RIt.peek (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:226:38614)
+    at g5i.g (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:228:4988)
+    at g5i.i (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:228:5608)
+    at g5i.g (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:228:5054)
+    at g5i.parseDocument (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:228:4875)
+    at rAe (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:228:4588)
+2025-04-10 12:13:26.826 [error] Token length and text length do not match!: Error: Token length and text length do not match!
+    at new K5 (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:53:14549)
+    at wCi.addSparseTokens (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:250:8403)
+    at ooe.getLineTokens (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:250:10302)
+    at o5i.read (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:226:39925)
+    at RIt.peek (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:226:38614)
+    at g5i.g (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:228:4988)
+    at g5i.parseDocument (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:228:4875)
+    at rAe (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:228:4588)
+    at p5i.u (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:228:8529)
+    at p5i.t (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:228:8376)
+2025-04-10 12:13:26.828 [error] Token length and text length do not match!: Error: Token length and text length do not match!
+    at new K5 (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:53:14549)
+    at wCi.addSparseTokens (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:250:8403)
+    at ooe.getLineTokens (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:250:10302)
+    at ICi.getViewLineData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:260:28809)
+    at tWi.getViewLineData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:260:41412)
+    at lWi.O (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:260:61949)
+    at lWi.getViewportViewLineRenderingData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:260:61745)
+    at n4i.getViewLineRenderingData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:73:162355)
+    at q0i.renderLine (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:69:22567)
+    at _j.o (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:73:14026)
+2025-04-10 12:13:26.830 [error] Token length and text length do not match!: Error: Token length and text length do not match!
+    at new K5 (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:53:14549)
+    at wCi.addSparseTokens (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:250:8403)
+    at ooe.getLineTokens (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:250:10302)
+    at ICi.getViewLineData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:260:28809)
+    at ICi.getViewLinesData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:260:28969)
+    at tWi.getViewLinesData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:260:41771)
+    at lWi.getMinimapLinesRenderingData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:260:62272)
+    at s4i.prepareRender (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:73:158404)
+    at mOi.prepareRender (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:73:15280)
+    at Object.prepareRender (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:226:10471)
+2025-04-10 12:13:26.832 [error] Token length and text length do not match!: Error: Token length and text length do not match!
+    at new K5 (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:53:14549)
+    at wCi.addSparseTokens (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:250:8403)
+    at ooe.getLineTokens (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:250:10302)
+    at ICi.getViewLineData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:260:28809)
+    at ICi.getViewLinesData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:260:28969)
+    at tWi.getViewLinesData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:260:41771)
+    at lWi.getMinimapLinesRenderingData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:260:62272)
+    at WFi.getMinimapLinesRenderingData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:73:111711)
+    at nse.gb (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:73:123221)
+    at nse.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:73:118907)
+2025-04-10 12:13:26.832 [error] Token length and text length do not match!: Error: Token length and text length do not match!
+    at K5 (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:53:14549)
+    at wCi.addSparseTokens (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:250:8403)
+    at ooe.getLineTokens (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:250:10302)
+    at ICi.getViewLineData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:260:28809)
+    at ICi.getViewLinesData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:260:28969)
+    at tWi.getViewLinesData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:260:41771)
+    at lWi.getMinimapLinesRenderingData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:260:62272)
+    at WFi.getMinimapLinesRenderingData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:73:111711)
+    at nse.gb (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:73:123221)
+    at nse.render (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:73:118907)
+2025-04-10 12:13:26.947 [error] Token length and text length do not match!: Error: Token length and text length do not match!
+    at K5 (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:53:14549)
+    at wCi.addSparseTokens (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:250:8403)
+    at ooe.getLineTokens (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:250:10302)
+    at ICi.getViewLineData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:260:28809)
+    at tWi.getViewLineData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:260:41412)
+    at lWi.O (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:260:61949)
+    at lWi.getViewportViewLineRenderingData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:260:61745)
+    at n4i.getViewLineRenderingData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:73:162355)
+    at q0i.renderLine (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:69:22567)
+    at _j.o (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:73:14026)
+2025-04-10 12:13:26.948 [error] Token length and text length do not match!: Error: Token length and text length do not match!
+    at K5 (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:53:14549)
+    at wCi.addSparseTokens (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:250:8403)
+    at ooe.getLineTokens (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:250:10302)
+    at ICi.getViewLineData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:260:28809)
+    at ICi.getViewLinesData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:260:28969)
+    at tWi.getViewLinesData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:260:41771)
+    at lWi.getMinimapLinesRenderingData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:260:62272)
+    at s4i.prepareRender (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:73:158404)
+    at mOi.prepareRender (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:73:15280)
+    at Object.prepareRender (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:226:10471)
+2025-04-10 12:13:26.966 [error] Token length and text length do not match!: Error: Token length and text length do not match!
+    at K5 (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:53:14549)
+    at wCi.addSparseTokens (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:250:8403)
+    at ooe.getLineTokens (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:250:10302)
+    at ICi.getViewLineData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:260:28809)
+    at tWi.getViewLineData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:260:41412)
+    at lWi.O (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:260:61949)
+    at lWi.getViewportViewLineRenderingData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:260:61745)
+    at n4i.getViewLineRenderingData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:73:162355)
+    at q0i.renderLine (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:69:22567)
+    at _j.o (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:73:14026)
+2025-04-10 12:13:26.967 [error] Token length and text length do not match!: Error: Token length and text length do not match!
+    at K5 (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:53:14549)
+    at wCi.addSparseTokens (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:250:8403)
+    at ooe.getLineTokens (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:250:10302)
+    at ICi.getViewLineData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:260:28809)
+    at ICi.getViewLinesData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:260:28969)
+    at tWi.getViewLinesData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:260:41771)
+    at lWi.getMinimapLinesRenderingData (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:260:62272)
+    at s4i.prepareRender (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:73:158404)
+    at mOi.prepareRender (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:73:15280)
+    at Object.prepareRender (vscode-file://vscode-app/usr/share/code/resources/app/out/vs/workbench/workbench.desktop.main.js:226:10471)
+2025-04-10 12:13:26.977 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+	at /root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+	at re (/root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+	at /root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+	at Immediate.<anonymous> (/root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+	at process.processImmediate (node:internal/timers:483:21)
+2025-04-10 12:13:28.618 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+	at /root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+	at re (/root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+	at /root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+	at Immediate.<anonymous> (/root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+	at process.processImmediate (node:internal/timers:483:21)
+2025-04-10 12:13:34.886 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+	at /root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+	at re (/root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+	at /root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+	at Immediate.<anonymous> (/root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+	at process.processImmediate (node:internal/timers:483:21)
+2025-04-10 12:13:41.308 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+	at /root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+	at re (/root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+	at /root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+	at Immediate.<anonymous> (/root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+	at process.processImmediate (node:internal/timers:483:21)
+2025-04-10 12:15:21.203 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+	at /root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+	at re (/root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+	at /root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+	at Immediate.<anonymous> (/root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+	at process.processImmediate (node:internal/timers:483:21)
+2025-04-10 12:15:22.296 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+	at /root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+	at re (/root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+	at /root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+	at Immediate.<anonymous> (/root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+	at process.processImmediate (node:internal/timers:483:21)
+2025-04-10 12:15:27.576 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+	at /root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+	at re (/root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+	at /root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+	at Immediate.<anonymous> (/root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+	at process.processImmediate (node:internal/timers:483:21)
+2025-04-10 12:15:57.108 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+	at /root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+	at re (/root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+	at /root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+	at Immediate.<anonymous> (/root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+	at process.processImmediate (node:internal/timers:483:21)
+2025-04-10 12:15:59.309 [error] Unhandled method getIdAtPosition: Error: Unhandled method getIdAtPosition
+	at /root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246605
+	at re (/root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:246899)
+	at /root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241683
+	at Immediate.<anonymous> (/root/.vscode/extensions/visualstudioexptteam.intellicode-api-usage-examples-0.2.9/dist/extension.js:2:241703)
+	at process.processImmediate (node:internal/timers:483:21)

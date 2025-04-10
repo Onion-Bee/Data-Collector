@@ -9,11 +9,7 @@
                 "folderUri": "file:///root/Desktop/Environments/App"
             }
         ],
-        "emptyWindows": [
-            {
-                "backupFolder": "1743777644638"
-            }
-        ]
+        "emptyWindows": []
     },
     "profileAssociations": {
         "workspaces": {
@@ -1720,7 +1716,7 @@
         "layoutInfo": {
             "sideBarSide": "left",
             "editorPartMinWidth": 220,
-            "titleBarHeight": 0,
+            "titleBarHeight": 35,
             "activityBarWidth": 48,
             "sideBarWidth": 300,
             "auxiliarySideBarWidth": 0,
@@ -1742,5 +1738,6 @@
             }
         },
         "openedWindows": []
-    }
+    },
+    "windowControlHeight": 35
 }

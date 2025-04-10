@@ -1,0 +1,78 @@
+2025-04-10 19:07:54.928 [info] [main] Log level: Info
+2025-04-10 19:07:54.928 [info] [main] Validating found git in: "git"
+2025-04-10 19:07:54.928 [info] [main] Using git "2.47.2" from "git"
+2025-04-10 19:07:54.928 [info] [Model][doInitialScan] Initial repository scan started
+2025-04-10 19:07:54.928 [info] > git rev-parse --show-toplevel [20ms]
+2025-04-10 19:07:54.928 [info] > git rev-parse --git-dir --git-common-dir [4ms]
+2025-04-10 19:07:54.928 [info] [Model][openRepository] Opened repository: /root/Desktop/Environments/App
+2025-04-10 19:07:54.934 [info] > git rev-parse --show-toplevel [9ms]
+2025-04-10 19:07:54.935 [info] > git config --get commit.template [15ms]
+2025-04-10 19:07:54.953 [info] > git rev-parse --show-toplevel [12ms]
+2025-04-10 19:07:54.964 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [11ms]
+2025-04-10 19:07:54.966 [info] > git rev-parse --show-toplevel [3ms]
+2025-04-10 19:07:54.990 [info] > git rev-parse --git-dir --git-common-dir [18ms]
+2025-04-10 19:07:54.993 [info] [Model][openRepository] Opened repository: /root/Desktop/Environments/App/Data-Collector
+2025-04-10 19:07:55.006 [info] > git status -z -uall [24ms]
+2025-04-10 19:07:55.006 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [17ms]
+2025-04-10 19:07:55.009 [info] > git rev-parse --show-toplevel [4ms]
+2025-04-10 19:07:55.010 [info] > git config --get commit.template [10ms]
+2025-04-10 19:07:55.093 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [46ms]
+2025-04-10 19:07:55.113 [info] > git config --get --local branch.master.vscode-merge-base [13ms]
+2025-04-10 19:07:55.113 [warning] [Git][config] git config failed: Failed to execute git
+2025-04-10 19:07:55.120 [info] > git config --get commit.template [45ms]
+2025-04-10 19:07:55.120 [info] > git rev-parse --show-toplevel [55ms]
+2025-04-10 19:07:55.123 [info] [Model][doInitialScan] Initial repository scan completed - repositories (2), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-04-10 19:07:55.161 [info] > git reflog master --grep-reflog=branch: Created from *. [41ms]
+2025-04-10 19:07:55.169 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [58ms]
+2025-04-10 19:07:55.187 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/root/Desktop/Environments/App/Data-Collector/.git/refs/remotes/origin/master'
+2025-04-10 19:07:55.195 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [26ms]
+2025-04-10 19:07:55.195 [info] fatal: ref refs/remotes/origin/HEAD is not a symbolic ref
+2025-04-10 19:07:55.195 [warning] [Repository][getDefaultBranch] Failed to get default branch details: Failed to execute git.
+2025-04-10 19:07:55.206 [info] > git merge-base refs/heads/master refs/remotes/origin/master [3ms]
+2025-04-10 19:07:55.214 [info] > git rev-parse refs/remotes/origin/master [27ms]
+2025-04-10 19:07:55.231 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [52ms]
+2025-04-10 19:07:55.237 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [6ms]
+2025-04-10 19:07:55.239 [info] > git diff --name-status -z --diff-filter=ADMR 5ed836ec092ced3830cbbba0fb29e0c59d1b74ea...refs/remotes/origin/master [25ms]
+2025-04-10 19:07:55.285 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [11ms]
+2025-04-10 19:07:55.298 [info] > git status -z -uall [33ms]
+2025-04-10 19:07:55.378 [info] > git status -z -uall [156ms]
+2025-04-10 19:07:55.393 [info] > git config --get commit.template [2ms]
+2025-04-10 19:07:55.393 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [8ms]
+2025-04-10 19:07:55.431 [info] > git config --get --local branch.master.vscode-merge-base [30ms]
+2025-04-10 19:07:55.431 [warning] [Git][config] git config failed: Failed to execute git
+2025-04-10 19:07:55.473 [info] > git show --textconv :App/info.py [18ms]
+2025-04-10 19:07:55.473 [info] > git ls-files --stage -- App/info.py [9ms]
+2025-04-10 19:07:55.482 [info] > git reflog master --grep-reflog=branch: Created from *. [44ms]
+2025-04-10 19:07:55.508 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [16ms]
+2025-04-10 19:07:55.515 [info] > git cat-file -s e5271c941730b26ee8d8873ac9d5945fbc8e3bd7 [34ms]
+2025-04-10 19:07:55.516 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [44ms]
+2025-04-10 19:07:55.523 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/root/Desktop/Environments/App/Data-Collector/.git/refs/remotes/origin/master'
+2025-04-10 19:07:55.524 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/master refs/remotes/origin/master [9ms]
+2025-04-10 19:07:55.532 [info] > git rev-parse refs/remotes/origin/master [9ms]
+2025-04-10 19:07:55.571 [info] > git config --add --local branch.master.vscode-merge-base origin/master [39ms]
+2025-04-10 19:07:55.572 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [24ms] (cancelled)
+2025-04-10 19:07:55.588 [info] > git status -z -uall [50ms] (cancelled)
+2025-04-10 19:07:55.591 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [12ms]
+2025-04-10 19:07:55.602 [info] > git config --get --local branch.master.vscode-merge-base [4ms]
+2025-04-10 19:07:55.610 [info] > git config --get commit.template [23ms]
+2025-04-10 19:07:55.638 [info] > git check-ignore -v -z --stdin [17ms]
+2025-04-10 19:07:55.638 [info] > git check-ignore -v -z --stdin [8ms]
+2025-04-10 19:07:55.639 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/master refs/remotes/origin/master [30ms]
+2025-04-10 19:07:55.657 [info] > git merge-base refs/heads/master refs/remotes/origin/master [9ms]
+2025-04-10 19:07:55.667 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [11ms]
+2025-04-10 19:07:55.676 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/root/Desktop/Environments/App/Data-Collector/.git/refs/remotes/origin/master'
+2025-04-10 19:07:55.679 [info] > git diff --name-status -z --diff-filter=ADMR 5ed836ec092ced3830cbbba0fb29e0c59d1b74ea...refs/remotes/origin/master [14ms]
+2025-04-10 19:07:55.680 [info] > git rev-parse refs/remotes/origin/master [4ms]
+2025-04-10 19:07:55.722 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [28ms]
+2025-04-10 19:07:55.770 [info] > git blame --root --incremental 5ed836ec092ced3830cbbba0fb29e0c59d1b74ea -- App/info.py [35ms]
+2025-04-10 19:07:55.848 [info] > git status -z -uall [161ms]
+2025-04-10 19:07:56.921 [info] > git config --get commit.template [1ms]
+2025-04-10 19:07:56.929 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2025-04-10 19:07:56.937 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/root/Desktop/Environments/App/Data-Collector/.git/refs/remotes/origin/master'
+2025-04-10 19:07:56.938 [info] > git rev-parse refs/remotes/origin/master [1ms]
+2025-04-10 19:07:56.957 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-04-10 19:07:57.079 [info] > git status -z -uall [133ms]
+2025-04-10 19:07:58.525 [info] > git config --get commit.template [8ms]
+2025-04-10 19:07:58.526 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2025-04-10 19:07:58.538 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-04-10 19:07:58.544 [info] > git status -z -uall [12ms]

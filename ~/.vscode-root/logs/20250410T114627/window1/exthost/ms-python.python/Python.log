@@ -1,0 +1,97 @@
+2025-04-10 11:46:31.278 [info] Experiment 'pythonaa' is active
+2025-04-10 11:46:31.278 [info] Experiment 'pythonRecommendTensorboardExt' is active
+2025-04-10 11:46:31.278 [info] Experiment 'pythonTerminalEnvVarActivation' is active
+2025-04-10 11:46:31.324 [warning] Dir "/root/Desktop/Environments/App/.pixi/envs" is not watchable (directory does not exist)
+2025-04-10 11:46:31.655 [info] > pyenv which python
+2025-04-10 11:46:31.655 [info] cwd: .
+2025-04-10 11:46:31.704 [info] > python -c "import sys;print(sys.executable)"
+2025-04-10 11:46:31.738 [info] > /usr/bin/python -I ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/interpreterInfo.py
+2025-04-10 11:46:34.377 [info] Experiment 'pythonaa' is active
+2025-04-10 11:46:34.377 [info] Experiment 'pythonRecommendTensorboardExt' is active
+2025-04-10 11:46:34.377 [info] Experiment 'pythonTerminalEnvVarActivation' is active
+2025-04-10 11:46:34.377 [warning] Dir "/root/Desktop/Environments/App/.pixi/envs" is not watchable (directory does not exist)
+2025-04-10 11:46:34.390 [info] Starting Environment refresh
+2025-04-10 11:46:34.390 [info] Searching for interpreters in posix paths locator
+2025-04-10 11:46:34.392 [info] Searching for pyenv environments
+2025-04-10 11:46:34.392 [info] Searching for conda environments
+2025-04-10 11:46:34.392 [info] Searching for global virtual environments
+2025-04-10 11:46:34.392 [info] Searching for custom virtual environments
+2025-04-10 11:46:34.396 [info] pyenv is not installed
+2025-04-10 11:46:34.396 [info] Finished searching for pyenv environments: 5 milliseconds
+2025-04-10 11:46:34.397 [info] Finished searching for custom virtual envs: 6 milliseconds
+2025-04-10 11:46:34.402 [info] > conda info --json
+2025-04-10 11:46:34.407 [info] > hatch env show --json
+2025-04-10 11:46:34.408 [info] cwd: .
+2025-04-10 11:46:34.412 [info] Finished searching for global virtual envs: 21 milliseconds
+2025-04-10 11:46:34.424 [info] > pyenv which python
+2025-04-10 11:46:34.424 [info] cwd: .
+2025-04-10 11:46:34.426 [info] Found: /bin/python --> /bin/python3.13
+2025-04-10 11:46:34.428 [info] Found: /bin/python2 --> /bin/python2.7
+2025-04-10 11:46:34.428 [info] Found: /bin/python2.7 --> /bin/python2.7
+2025-04-10 11:46:34.430 [info] Found: /bin/python3 --> /bin/python3.13
+2025-04-10 11:46:34.431 [info] Found: /bin/python3.12 --> /bin/python3.12
+2025-04-10 11:46:34.431 [info] Found: /bin/python3.13 --> /bin/python3.13
+2025-04-10 11:46:34.436 [info] > /usr/bin/python -I ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/interpreterInfo.py
+2025-04-10 11:46:34.452 [info] Found: /usr/bin/python --> /usr/bin/python3.13
+2025-04-10 11:46:34.456 [info] > ./venv/bin/python -I ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/interpreterInfo.py
+2025-04-10 11:46:34.457 [info] Found: /usr/bin/python2 --> /usr/bin/python2.7
+2025-04-10 11:46:34.457 [info] Found: /usr/bin/python2.7 --> /usr/bin/python2.7
+2025-04-10 11:46:34.458 [info] Found: /usr/bin/python3 --> /usr/bin/python3.13
+2025-04-10 11:46:34.458 [info] Found: /usr/bin/python3.12 --> /usr/bin/python3.12
+2025-04-10 11:46:34.458 [info] Found: /usr/bin/python3.13 --> /usr/bin/python3.13
+2025-04-10 11:46:34.467 [info] Python interpreter path: /usr/bin/python
+2025-04-10 11:46:34.506 [info] > /bin/python -I ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/interpreterInfo.py
+2025-04-10 11:46:34.519 [info] > /bin/python2 -I ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/interpreterInfo.py
+2025-04-10 11:46:34.530 [info] > /bin/python3.12 -I ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/interpreterInfo.py
+2025-04-10 11:46:34.531 [warning] [Error: Command failed: /bin/python2 -I /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/get_output_via_markers.py /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/interpreterInfo.py
+Unknown option: -I
+usage: /bin/python2 [option] ... [-c cmd | -m mod | file | -] [arg] ...
+Try `python -h' for more information.
+
+	at genericNodeError (node:internal/errors:984:15)
+	at wrappedFn (node:internal/errors:538:14)
+	at ChildProcess.exithandler (node:child_process:423:12)
+	at ChildProcess.emit (node:events:530:35)
+	at maybeClose (node:internal/child_process:1104:16)
+	at Socket.<anonymous> (node:internal/child_process:456:11)
+	at Socket.emit (node:events:518:28)
+	at Pipe.<anonymous> (node:net:343:12)] {
+  code: 2,
+  killed: false,
+  signal: null,
+  cmd: '/bin/python2 -I /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/get_output_via_markers.py /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/interpreterInfo.py'
+}
+2025-04-10 11:46:34.531 [error] Support for Python 2.7 has been dropped by the Python extension so certain features may not work, upgrade to using Python 3.
+2025-04-10 11:46:34.536 [info] > /bin/python2 ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/interpreterInfo.py
+2025-04-10 11:46:34.548 [info] Finished searching for interpreters in posix paths locator: 154 milliseconds
+2025-04-10 11:46:34.548 [info] > /usr/bin/python2 -I ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/interpreterInfo.py
+2025-04-10 11:46:34.550 [warning] [Error: Command failed: /usr/bin/python2 -I /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/get_output_via_markers.py /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/interpreterInfo.py
+Unknown option: -I
+usage: /usr/bin/python2 [option] ... [-c cmd | -m mod | file | -] [arg] ...
+Try `python -h' for more information.
+
+	at genericNodeError (node:internal/errors:984:15)
+	at wrappedFn (node:internal/errors:538:14)
+	at ChildProcess.exithandler (node:child_process:423:12)
+	at ChildProcess.emit (node:events:530:35)
+	at maybeClose (node:internal/child_process:1104:16)
+	at Socket.<anonymous> (node:internal/child_process:456:11)
+	at Socket.emit (node:events:518:28)
+	at Pipe.<anonymous> (node:net:343:12)] {
+  code: 2,
+  killed: false,
+  signal: null,
+  cmd: '/usr/bin/python2 -I /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/get_output_via_markers.py /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/interpreterInfo.py'
+}
+2025-04-10 11:46:34.550 [error] Support for Python 2.7 has been dropped by the Python extension so certain features may not work, upgrade to using Python 3.
+2025-04-10 11:46:34.554 [info] > /usr/bin/python2 ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/interpreterInfo.py
+2025-04-10 11:46:34.562 [info] > /usr/bin/python3.12 -I ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/interpreterInfo.py
+2025-04-10 11:46:34.562 [info] Environments refresh paths discovered (event): 173 milliseconds
+2025-04-10 11:46:34.562 [info] Environments refresh paths discovered: 173 milliseconds
+2025-04-10 11:46:34.600 [info] Environments refresh finished (event): 211 milliseconds
+2025-04-10 11:46:34.602 [info] Environment refresh took 213 milliseconds
+2025-04-10 11:46:35.462 [info] Starting Pylance language server.
+2025-04-10 11:47:33.967 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/info.py
+2025-04-10 12:13:39.216 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/info.py
+2025-04-10 12:15:25.511 [info] Discover tests for workspace name: undefined - uri: /root/Desktop/Environments/App/~/.vscode-root/User/settings.json
+2025-04-10 12:15:26.857 [info] Discover tests for workspace name: undefined - uri: /root/Desktop/Environments/App/~/.vscode-root/User/settings.json

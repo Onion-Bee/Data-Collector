@@ -1,0 +1,66 @@
+2025-04-11 00:04:26.508 [info] (Client) Pylance async client (2025.4.1) started with python extension (2025.4.0)
+2025-04-11 00:04:26.664 [info] [Info  - 00:04:26] (2837) Server root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2025.4.1/dist
+2025-04-11 00:04:26.664 [info] [Info  - 00:04:26] (2837) Pylance language server 2025.4.1 (pyright version 1.1.398, commit 4f24eccc) starting
+2025-04-11 00:04:26.665 [info] [Info  - 00:04:26] (2837) Starting service instance "App" for workspace "/root/Desktop/Environments/App"
+2025-04-11 00:04:26.728 [info] [Info  - 00:04:26] (2837) Setting environmentName for service "App": "3.13.2 (venv venv)"
+2025-04-11 00:04:26.728 [info] [Info  - 00:04:26] (2837) Setting pythonPath for service "App": "/root/Desktop/Environments/App/venv/bin/python"
+2025-04-11 00:04:26.728 [info] [Info  - 00:04:26] (2837) No include entries specified; assuming /root/Desktop/Environments/App
+2025-04-11 00:04:26.729 [info] [Info  - 00:04:26] (2837) Auto-excluding **/node_modules
+2025-04-11 00:04:26.729 [info] [Info  - 00:04:26] (2837) Auto-excluding **/__pycache__
+2025-04-11 00:04:26.729 [info] [Info  - 00:04:26] (2837) Auto-excluding **/.*
+2025-04-11 00:04:26.749 [info] [Info  - 00:04:26] (2837) Assuming Python version 3.13.2.final.0
+2025-04-11 00:04:26.882 [info] [Info  - 00:04:26] (2837) Auto-excluding /root/Desktop/Environments/App/venv
+2025-04-11 00:04:26.889 [info] [Info  - 00:04:26] (2837) Found 6 source files
+2025-04-11 00:04:26.916 [info] [Info  - 00:04:26] (2837) Setting environmentName for service "App": "3.13.2 (venv venv)"
+2025-04-11 00:04:26.917 [info] [Info  - 00:04:26] (2837) Setting pythonPath for service "App": "/root/Desktop/Environments/App/venv/bin/python"
+2025-04-11 00:04:26.917 [info] [Info  - 00:04:26] (2837) No include entries specified; assuming /root/Desktop/Environments/App
+2025-04-11 00:04:26.917 [info] [Info  - 00:04:26] (2837) Auto-excluding **/node_modules
+2025-04-11 00:04:26.917 [info] [Info  - 00:04:26] (2837) Auto-excluding **/__pycache__
+2025-04-11 00:04:26.917 [info] [Info  - 00:04:26] (2837) Auto-excluding **/.*
+2025-04-11 00:04:26.941 [info] [Info  - 00:04:26] (2837) Assuming Python version 3.13.2.final.0
+2025-04-11 00:04:26.977 [info] [Info  - 00:04:26] (2837) Auto-excluding /root/Desktop/Environments/App/venv
+2025-04-11 00:04:26.979 [info] [Info  - 00:04:26] (2837) Found 6 source files
+2025-04-11 00:04:27.449 [info] [Info  - 00:04:27] (2837) BG: Priority queue background worker(2) root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2025.4.1/dist
+2025-04-11 00:04:27.449 [info] [Info  - 00:04:27] (2837) BG: Priority queue background worker(2) started
+2025-04-11 00:04:27.664 [info] [Info  - 00:04:27] (2837) BG: Indexer background runner(3) root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2025.4.1/dist (index)
+2025-04-11 00:04:27.664 [info] [Info  - 00:04:27] (2837) BG: Indexing(3) started
+2025-04-11 00:04:28.155 [info] [Info  - 00:04:28] (2837) BG: scanned(3) 8 files over 1 exec env
+2025-04-11 00:04:28.320 [info] [Info  - 00:04:28] (2837) BG: indexed(3) 8 files over 1 exec env
+2025-04-11 00:04:28.332 [info] [Info  - 00:04:28] (2837) BG: Indexing finished(3).
+2025-04-11 00:04:31.182 [info] [Info  - 00:04:31] (2837) Starting service instance "<default>" for workspace ""
+2025-04-11 00:04:31.236 [info] [Info  - 00:04:31] (2837) Setting environmentName for service "<default>": "3.13.2 (venv venv)"
+2025-04-11 00:04:31.237 [info] [Info  - 00:04:31] (2837) Setting pythonPath for service "<default>": "/root/Desktop/Environments/App/venv/bin/python"
+2025-04-11 00:04:31.237 [info] [Info  - 00:04:31] (2837) No include entries specified; assuming /<default workspace root>
+2025-04-11 00:04:31.237 [info] [Info  - 00:04:31] (2837) Auto-excluding **/node_modules
+2025-04-11 00:04:31.237 [info] [Info  - 00:04:31] (2837) Auto-excluding **/__pycache__
+2025-04-11 00:04:31.237 [info] [Info  - 00:04:31] (2837) Auto-excluding **/.*
+2025-04-11 00:04:31.254 [info] [Info  - 00:04:31] (2837) Assuming Python version 3.13.2.final.0
+2025-04-11 00:04:31.293 [info] [Error - 00:04:31] (2837) File or directory "/<default workspace root>" does not exist.
+2025-04-11 00:04:31.294 [info] [Info  - 00:04:31] (2837) No source files found.
+2025-04-11 00:04:31.767 [info] [Info  - 00:04:31] (2837) BG: Priority queue background worker(5) root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2025.4.1/dist
+2025-04-11 00:04:31.768 [info] [Info  - 00:04:31] (2837) BG: Priority queue background worker(5) started
+2025-04-11 00:06:38.082 [info] [Info  - 00:06:38] (2837) Setting environmentName for service "App": "3.13.2 (venv venv)"
+2025-04-11 00:06:38.082 [info] [Info  - 00:06:38] (2837) Setting pythonPath for service "App": "/root/Desktop/Environments/App/venv/bin/python"
+2025-04-11 00:06:38.082 [info] [Info  - 00:06:38] (2837) No include entries specified; assuming /root/Desktop/Environments/App
+2025-04-11 00:06:38.082 [info] [Info  - 00:06:38] (2837) Auto-excluding **/node_modules
+2025-04-11 00:06:38.082 [info] [Info  - 00:06:38] (2837) Auto-excluding **/__pycache__
+2025-04-11 00:06:38.082 [info] [Info  - 00:06:38] (2837) Auto-excluding **/.*
+2025-04-11 00:06:38.106 [info] [Info  - 00:06:38] (2837) Assuming Python version 3.13.2.final.0
+2025-04-11 00:06:38.155 [info] [Info  - 00:06:38] (2837) Auto-excluding /root/Desktop/Environments/App/venv
+2025-04-11 00:06:38.157 [info] [Info  - 00:06:38] (2837) Found 6 source files
+2025-04-11 00:06:38.202 [info] [Info  - 00:06:38] (2837) Setting environmentName for service "<default>": "3.13.2 (venv venv)"
+2025-04-11 00:06:38.203 [info] [Info  - 00:06:38] (2837) Setting pythonPath for service "<default>": "/root/Desktop/Environments/App/venv/bin/python"
+2025-04-11 00:06:38.203 [info] [Info  - 00:06:38] (2837) No include entries specified; assuming /<default workspace root>
+2025-04-11 00:06:38.203 [info] [Info  - 00:06:38] (2837) Auto-excluding **/node_modules
+2025-04-11 00:06:38.203 [info] [Info  - 00:06:38] (2837) Auto-excluding **/__pycache__
+2025-04-11 00:06:38.203 [info] [Info  - 00:06:38] (2837) Auto-excluding **/.*
+2025-04-11 00:06:38.236 [info] [Info  - 00:06:38] (2837) Assuming Python version 3.13.2.final.0
+2025-04-11 00:06:38.299 [info] [Error - 00:06:38] (2837) File or directory "/<default workspace root>" does not exist.
+2025-04-11 00:06:38.299 [info] [Info  - 00:06:38] (2837) No source files found.
+2025-04-11 00:06:38.910 [info] [Info  - 00:06:38] (2837) BG: Indexer background runner(6) root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2025.4.1/dist (index)
+2025-04-11 00:06:38.911 [info] [Info  - 00:06:38] (2837) BG: Indexing(6) started
+2025-04-11 00:06:39.105 [info] [Info  - 00:06:39] (2837) BG: scanned(6) 8 files over 1 exec env
+2025-04-11 00:06:39.230 [info] [Info  - 00:06:39] (2837) BG: indexed(6) 8 files over 1 exec env
+2025-04-11 00:06:39.238 [info] [Info  - 00:06:39] (2837) BG: Indexing finished(6).
+2025-04-11 00:53:32.829 [info] [Info  - 00:53:32] (2837) Auto-excluding /root/Desktop/Environments/App/venv
+2025-04-11 00:53:32.839 [info] [Info  - 00:53:32] (2837) Found 3 source files
