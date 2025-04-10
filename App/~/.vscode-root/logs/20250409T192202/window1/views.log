@@ -12,3 +12,5 @@
 2025-04-09 19:22:04.925 [info] Added views:~remote.forwardedPorts in ~remote.forwardedPortsContainer
 2025-04-09 19:22:05.219 [info] Added views:workbench.view.testing in workbench.view.extension.test
 2025-04-09 19:22:06.045 [info] Added views:workbench.scm.history in workbench.view.scm
+2025-04-09 19:50:22.039 [info] Removed views:workbench.scm.history from workbench.view.scm
+2025-04-09 19:50:22.041 [info] Removed views:workbench.view.testing from workbench.view.extension.test

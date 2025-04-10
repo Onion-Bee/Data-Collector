@@ -1,0 +1,17 @@
+2025-04-09 22:18:59.327 [info] Experiment 'pythonaa' is active
+2025-04-09 22:18:59.327 [info] Experiment 'pythonRecommendTensorboardExt' is active
+2025-04-09 22:18:59.327 [info] Experiment 'pythonTerminalEnvVarActivation' is active
+2025-04-09 22:18:59.327 [warning] Dir "/root/Desktop/Environments/App/.pixi/envs" is not watchable (directory does not exist)
+2025-04-09 22:18:59.327 [info] Python interpreter path: ./venv/bin/python
+2025-04-09 22:18:59.336 [info] > pyenv which python
+2025-04-09 22:18:59.336 [info] cwd: .
+2025-04-09 22:19:00.258 [info] > . ./venv/bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/printEnvVariables.py
+2025-04-09 22:19:00.258 [info] shell: zsh
+2025-04-09 22:19:00.304 [info] > /bin/python ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/printEnvVariables.py
+2025-04-09 22:19:00.304 [info] shell: zsh
+2025-04-09 22:19:00.366 [info] Prepending environment variable PATH in collection with /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/deactivate/zsh:/root/Desktop/Environments/App/bin: {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2025-04-09 22:19:00.367 [info] Setting environment variable VIRTUAL_ENV in collection to /root/Desktop/Environments/App {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2025-04-09 22:19:00.367 [info] Setting environment variable VIRTUAL_ENV_PROMPT in collection to App {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2025-04-09 22:19:00.367 [info] Prepending environment variable PS1 in collection with App {"applyAtShellIntegration":true,"applyAtProcessCreation":false}
+2025-04-09 22:19:00.368 [info] Send text to terminal: /bin/python /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/printEnvVariablesToFile.py /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/deactivate/zsh/envVars.txt
+2025-04-09 22:19:00.840 [info] Starting Pylance language server.

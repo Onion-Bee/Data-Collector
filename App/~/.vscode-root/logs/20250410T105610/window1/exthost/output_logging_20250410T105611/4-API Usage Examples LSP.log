@@ -1,0 +1,9 @@
+Logger Init
+Initialization complete.
+Loaded supported calls (Version 1.5)
+Batch of 56 Total time: 219ms (Avg. Per Call: 4ms)
+Batch of 2 Total time: 760ms (Avg. Per Call: 380ms)
+Batch of 2 Total time: 461ms (Avg. Per Call: 231ms)
+Batch of 1 Total time: 809ms (Avg. Per Call: 809ms)
+Batch of 2 Total time: 880ms (Avg. Per Call: 440ms)
+Batch of 1 Total time: 700ms (Avg. Per Call: 700ms)

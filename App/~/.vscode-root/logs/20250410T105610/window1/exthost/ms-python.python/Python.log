@@ -1,0 +1,46 @@
+2025-04-10 10:56:13.158 [info] Experiment 'pythonaa' is active
+2025-04-10 10:56:13.158 [info] Experiment 'pythonRecommendTensorboardExt' is active
+2025-04-10 10:56:13.158 [info] Experiment 'pythonTerminalEnvVarActivation' is active
+2025-04-10 10:56:13.158 [warning] Dir "/root/Desktop/Environments/App/.pixi/envs" is not watchable (directory does not exist)
+2025-04-10 10:56:13.158 [info] Python interpreter path: ./venv/bin/python
+2025-04-10 10:56:13.173 [info] > pyenv which python
+2025-04-10 10:56:13.173 [info] cwd: .
+2025-04-10 10:56:13.631 [info] > . ./venv/bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/printEnvVariables.py
+2025-04-10 10:56:13.631 [info] shell: zsh
+2025-04-10 10:56:13.730 [info] > /bin/python ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/printEnvVariables.py
+2025-04-10 10:56:13.730 [info] shell: zsh
+2025-04-10 10:56:13.760 [info] Prepending environment variable PATH in collection with /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/deactivate/zsh:/root/Desktop/Environments/App/bin: {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2025-04-10 10:56:13.760 [info] Setting environment variable VIRTUAL_ENV in collection to /root/Desktop/Environments/App {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2025-04-10 10:56:13.760 [info] Setting environment variable VIRTUAL_ENV_PROMPT in collection to App {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2025-04-10 10:56:13.760 [info] Prepending environment variable PS1 in collection with App {"applyAtShellIntegration":true,"applyAtProcessCreation":false}
+2025-04-10 10:56:13.761 [info] Send text to terminal: /bin/python /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/printEnvVariablesToFile.py /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/deactivate/zsh/envVars.txt
+2025-04-10 10:56:14.702 [info] Starting Pylance language server.
+2025-04-10 11:06:43.391 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/info.py
+2025-04-10 11:07:55.493 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/main.py
+2025-04-10 11:07:56.635 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/main.py
+2025-04-10 11:08:57.130 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/game.py
+2025-04-10 11:08:57.606 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/game.py
+2025-04-10 11:09:01.460 [info] Discover tests for workspace name: undefined - uri: /root/Desktop/Environments/App/App/~/.vscode-root/User/settings.json
+2025-04-10 11:09:02.765 [info] Discover tests for workspace name: undefined - uri: /root/Desktop/Environments/App/App/~/.vscode-root/User/settings.json
+2025-04-10 11:12:16.413 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/game.py
+2025-04-10 11:12:17.845 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/game.py
+2025-04-10 11:12:19.709 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/game.py
+2025-04-10 11:12:22.275 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/game.py
+2025-04-10 11:15:38.574 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/game.py
+2025-04-10 11:15:39.614 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/game.py
+2025-04-10 11:15:40.824 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/game.py
+2025-04-10 11:15:41.681 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/game.py
+2025-04-10 11:15:57.257 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/game.py
+2025-04-10 11:16:02.413 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/game.py
+2025-04-10 11:16:03.076 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/game.py
+2025-04-10 11:16:15.232 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/game.py
+2025-04-10 11:16:16.198 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/game.py
+2025-04-10 11:16:30.008 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/game.py
+2025-04-10 11:16:33.708 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/game.py
+2025-04-10 11:16:35.730 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/game.py
+2025-04-10 11:16:54.320 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/game.py
+2025-04-10 11:16:57.843 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/game.py
+2025-04-10 11:16:58.591 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/game.py
+2025-04-10 11:18:42.480 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/game.py
+2025-04-10 11:18:44.619 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/game.py
+2025-04-10 11:18:47.109 [info] Discover tests for workspace name: App - uri: /root/Desktop/Environments/App/App/game.py
