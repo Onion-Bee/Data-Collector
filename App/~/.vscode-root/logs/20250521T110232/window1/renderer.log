@@ -91,3 +91,5 @@ product.json (WINS):
 2025-05-21 14:48:43.232 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
 2025-05-21 15:21:58.849 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
 2025-05-21 15:21:58.863 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 16:31:47.891 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 16:31:47.908 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
