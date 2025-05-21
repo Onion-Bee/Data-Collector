@@ -1,0 +1,93 @@
+2025-05-21 11:02:33.377 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.python' wants API proposal 'terminalShellType' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-05-21 11:02:33.388 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.vscode-python-envs' wants API proposal 'terminalShellType' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-05-21 11:02:33.388 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'github.copilot-chat' wants API proposal 'chatReadonlyPromptReference' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-05-21 11:02:33.522 [info] ChatSessionStore: Migrating 0 chat sessions from storage service to file system
+2025-05-21 11:02:33.624 [info] Started local extension host with pid 19122.
+2025-05-21 11:02:33.833 [error] Extension 'ms-python.vscode-pylance' appears in product.json but enables LESS API proposals than the extension wants.
+package.json (LOSES): mcpConfigurationProvider
+product.json (WINS): 
+2025-05-21 11:02:33.851 [info] [Oracle.oracle-java]: Command `workbench.action.debug.run` already registered by Java (Oracle.oracle-java)
+2025-05-21 11:02:33.851 [info] [Oracle.oracle-java]: Command `workbench.action.debug.start` already registered by Java (Oracle.oracle-java)
+2025-05-21 11:02:33.851 [info] [Oracle.oracle-java]: Command `jdk.select.editor.projects` already registered by Java (Oracle.oracle-java)
+2025-05-21 11:02:34.076 [error] [sidthesloth.html5-boilerplate]: Unknown language in `contributes.html5-boilerplate.language`. Provided value: njk
+2025-05-21 11:02:34.076 [error] [sidthesloth.html5-boilerplate]: Unknown language in `contributes.html5-boilerplate.language`. Provided value: django-html
+2025-05-21 11:02:34.125 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-05-21 11:02:36.610 [info] [perf] Render performance baseline is 20ms
+2025-05-21 11:02:57.193 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.python' wants API proposal 'terminalShellType' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-05-21 11:02:57.194 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'ms-python.vscode-python-envs' wants API proposal 'terminalShellType' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-05-21 11:02:57.194 [warning] Via 'product.json#extensionEnabledApiProposals' extension 'github.copilot-chat' wants API proposal 'chatReadonlyPromptReference' but that proposal DOES NOT EXIST. Likely, the proposal has been finalized (check 'vscode.d.ts') or was abandoned.
+2025-05-21 11:02:57.261 [info] ChatSessionStore: Migrating 0 chat sessions from storage service to file system
+2025-05-21 11:02:57.395 [info] Started local extension host with pid 19454.
+2025-05-21 11:02:57.594 [error] Extension 'ms-python.vscode-pylance' appears in product.json but enables LESS API proposals than the extension wants.
+package.json (LOSES): mcpConfigurationProvider
+product.json (WINS): 
+2025-05-21 11:02:58.037 [info] Settings Sync: Account status changed from uninitialized to unavailable
+2025-05-21 11:02:58.116 [error] [sidthesloth.html5-boilerplate]: Unknown language in `contributes.html5-boilerplate.language`. Provided value: njk
+2025-05-21 11:02:58.116 [error] [sidthesloth.html5-boilerplate]: Unknown language in `contributes.html5-boilerplate.language`. Provided value: django-html
+2025-05-21 11:02:59.766 [info] [Oracle.oracle-java]: Command `workbench.action.debug.run` already registered by Java (Oracle.oracle-java)
+2025-05-21 11:02:59.766 [info] [Oracle.oracle-java]: Command `workbench.action.debug.start` already registered by Java (Oracle.oracle-java)
+2025-05-21 11:02:59.766 [info] [Oracle.oracle-java]: Command `jdk.select.editor.projects` already registered by Java (Oracle.oracle-java)
+2025-05-21 11:03:00.370 [info] [perf] Render performance baseline is 28ms
+2025-05-21 11:03:01.630 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:01.631 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:01.632 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:01.702 [error] An unknown error occurred. Please consult the log for more details.
+2025-05-21 11:03:02.628 [info] [Extensions]: Checking for updates. Reason: Product update
+2025-05-21 11:03:03.115 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:03.116 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:03.123 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:03.158 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:03.158 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:03.158 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:03.159 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:03.159 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:03.159 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:03.179 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:03.291 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:03.293 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:03.320 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:03.320 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:03.320 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:03.320 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:03.320 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:03.320 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:03.348 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:03.408 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:03.410 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:03.845 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:03.845 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:14.646 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:14.649 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:14.653 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:14.696 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:14.696 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:14.697 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:14.697 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:14.698 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:14.698 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:14.739 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:14.804 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:14.805 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:15.135 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:15.136 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:15.544 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:15.545 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:16.025 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:16.213 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:03:16.287 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:10:14.375 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:10:14.389 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:37:37.271 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:37:37.286 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:59:33.153 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:59:33.162 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:59:37.707 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 11:59:37.731 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 12:01:11.282 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 12:01:11.297 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 14:42:43.868 [warning] Failed to fetch chat participant registry Offline
+2025-05-21 14:47:43.876 [warning] Failed to fetch chat participant registry Offline
+2025-05-21 14:48:43.218 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 14:48:43.232 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 15:21:58.849 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed
+2025-05-21 15:21:58.863 [error] [Extension Host] Notification handler 'window/logMessage' failed with message: Channel has been closed

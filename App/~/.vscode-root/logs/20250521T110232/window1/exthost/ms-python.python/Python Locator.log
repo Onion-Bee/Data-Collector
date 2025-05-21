@@ -1,0 +1,29 @@
+2025-05-21 11:02:59.804 [info] Starting Python Locator /root/.vscode/extensions/ms-python.python-2025.6.1-linux-x64/python-env-tools/bin/pet server
+2025-05-21 11:02:59.821 [info] Discovered env: /root/Desktop/Environments/App/venv/bin/python
+2025-05-21 11:03:00.056 [info] Discovered env: /bin/python
+2025-05-21 11:03:00.159 [info] Discovered env: /usr/bin/python
+2025-05-21 11:03:00.402 [info] Discovered env: /bin/python2
+2025-05-21 11:03:00.405 [info] Discovered env: /usr/bin/python2
+2025-05-21 11:03:00.406 [info] Discovered env: /bin/python3.12
+2025-05-21 11:03:00.407 [info] Discovered env: /usr/bin/python3.12
+2025-05-21 11:03:00.408 [info] Locator Conda took 87.763156ms
+2025-05-21 11:03:00.408 [info] Locator Homebrew took 676.503µs
+2025-05-21 11:03:00.408 [info] Locator LinuxGlobal took 298.277549ms
+2025-05-21 11:03:00.408 [info] Locator PipEnv took 17.939µs
+2025-05-21 11:03:00.408 [info] Locator Pixi took 38.939µs
+2025-05-21 11:03:00.408 [info] Locator Poetry took 969.531µs
+2025-05-21 11:03:00.408 [info] Locator PyEnv took 9.291361ms
+2025-05-21 11:03:00.408 [info] Locator Venv took 20.356µs
+2025-05-21 11:03:00.408 [info] Locator VirtualEnv took 30.789µs
+2025-05-21 11:03:00.408 [info] Locator VirtualEnvWrapper took 24.855µs
+2025-05-21 11:03:00.408 [info] Locator GlobalVirtualEnvs took 92.817µs
+2025-05-21 11:03:00.408 [info] Locator Locators took 309.468523ms
+2025-05-21 11:03:00.408 [info] Locator Path took 485.825626ms
+2025-05-21 11:03:00.408 [info] Locator Workspaces took 21.292185ms
+2025-05-21 11:03:00.408 [info] Refresh completed in 488ms
+2025-05-21 11:03:00.478 [info] Resolved Python Environment /root/Desktop/Environments/App/venv/bin/python
+2025-05-21 11:15:32.691 [info] Resolved Python Environment /root/Desktop/Environments/App/venv/bin/python
+2025-05-21 11:37:20.925 [info] Resolved Python Environment /root/Desktop/Environments/App/venv/bin/python
+2025-05-21 11:40:16.738 [info] Resolved Python Environment /root/Desktop/Environments/App/venv/bin/python
+2025-05-21 11:59:29.562 [info] Resolved Python Environment /root/Desktop/Environments/App/venv/bin/python
+2025-05-21 15:26:58.423 [info] Resolved Python Environment /root/Desktop/Environments/App/venv/bin/python

@@ -1,0 +1,40 @@
+2025-05-21 11:02:34.154 [info] Extension host with pid 19122 started
+2025-05-21 11:02:34.174 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-05-21 11:02:34.331 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2025-05-21 11:02:34.391 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2025-05-21 11:02:34.439 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-05-21 11:02:34.527 [info] Eager extensions activated
+2025-05-21 11:02:34.536 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-05-21 11:02:34.538 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-05-21 11:02:57.004 [info] Extension host terminating: renderer closed the MessagePort
+2025-05-21 11:02:57.020 [info] Extension host with pid 19122 exiting with code 0
+2025-05-21 11:02:57.820 [info] Extension host with pid 19454 started
+2025-05-21 11:02:57.820 [info] Skipping acquiring lock for /root/Desktop/Environments/App/App/~/.vscode-root/User/workspaceStorage/613d6a61091fa8c02d4b3c399d99eab8.
+2025-05-21 11:02:57.855 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
+2025-05-21 11:02:57.910 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+2025-05-21 11:02:57.912 [info] ExtensionService#_doActivateExtension ms-python.python, startup: true, activationEvent: 'workspaceContains:requirements.txt'
+2025-05-21 11:02:58.174 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2025-05-21 11:02:58.952 [info] Eager extensions activated
+2025-05-21 11:02:58.956 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2025-05-21 11:02:58.958 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2025-05-21 11:02:59.020 [info] ExtensionService#_doActivateExtension ms-python.vscode-pylance, startup: false, activationEvent: 'api', root cause: ms-python.python
+2025-05-21 11:02:59.903 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: vscode.github
+2025-05-21 11:03:00.188 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2025-05-21 11:03:01.701 [error] Error: Channel has been closed
+	at s (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:117:2431)
+	at Object.appendLine (file:///usr/share/code/resources/app/out/vs/workbench/api/node/extensionHostProcess.js:117:2570)
+	at _0x5d1d85.<computed>.appendLine (/root/.vscode/extensions/ms-python.vscode-pylance-2025.5.1/dist/extension.bundle.js:1:370522)
+	at _0x5d1d85.<computed>.appendLine (/root/.vscode/extensions/ms-python.vscode-pylance-2025.5.1/dist/extension.bundle.js:1:370522)
+	at P.logOutputMessage (/root/.vscode/extensions/ms-python.python-2025.6.1-linux-x64/out/client/extension.js:2:2018199)
+	at P.info (/root/.vscode/extensions/ms-python.python-2025.6.1-linux-x64/out/client/extension.js:2:2017932)
+	at ChildProcess.<anonymous> (/root/.vscode/extensions/ms-python.python-2025.6.1-linux-x64/out/client/extension.js:2:2236275)
+	at ChildProcess.emit (node:events:518:28)
+	at ChildProcess._handle.onexit (node:internal/child_process:293:12)
+2025-05-21 11:03:14.179 [info] ExtensionService#_doActivateExtension ms-python.debugpy, startup: false, activationEvent: 'onLanguage:python'
+2025-05-21 11:03:14.254 [info] ExtensionService#_doActivateExtension VisualStudioExptTeam.intellicode-api-usage-examples, startup: false, activationEvent: 'onLanguage:python'
+2025-05-21 11:03:14.444 [info] ExtensionService#_doActivateExtension VisualStudioExptTeam.vscodeintellicode, startup: false, activationEvent: 'onLanguage:python'
+2025-05-21 11:37:21.150 [info] ExtensionService#_doActivateExtension mechatroner.rainbow-csv, startup: false, activationEvent: 'onLanguage:plaintext'
+2025-05-21 11:37:29.550 [info] ExtensionService#_doActivateExtension vscode.media-preview, startup: false, activationEvent: 'onCustomEditor:vscode.audioPreview'
+2025-05-21 11:56:50.854 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-05-21 11:56:50.863 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2025-05-21 11:56:50.917 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'

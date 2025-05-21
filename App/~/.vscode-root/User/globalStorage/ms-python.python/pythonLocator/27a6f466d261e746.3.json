@@ -1,0 +1,14 @@
+{
+  "environment": {
+    "executable": "/root/Desktop/Environments/App/venv/bin/python",
+    "prefix": "/root/Desktop/Environments/App/venv",
+    "version": "3.11.8.final.0",
+    "is64Bit": true,
+    "symlinks": [
+      "/root/Desktop/Environments/App/venv/bin/python",
+      "/root/Desktop/Environments/App/venv/bin/python3",
+      "/root/Desktop/Environments/App/venv/bin/python3.11"
+    ]
+  },
+  "symlinks": []
+}
