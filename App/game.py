@@ -2,7 +2,12 @@ import pygame
 import time
 import random
 import csv
+import os
 from datetime import datetime
+
+# Ensure logs directory exists
+LOG_DIR = 'logs'
+os.makedirs(LOG_DIR, exist_ok=True)
 
 # Initialize Pygame
 pygame.init()
@@ -14,17 +19,17 @@ screen = pygame.display.set_mode((WIDTH, HEIGHT), pygame.FULLSCREEN)
 pygame.display.set_caption("Bubble Pop Game")
 
 # Load background and character
-BACKGROUND_IMG = pygame.image.load('GAMEBG.jpg')
+BACKGROUND_IMG = pygame.image.load('src/GAMEBG.jpg')
 BACKGROUND_IMG = pygame.transform.scale(BACKGROUND_IMG, (WIDTH, HEIGHT))
-CHAR_IMG = pygame.image.load('character.png')  # ensure this file exists
-# Scale character to 1/3 screen width
+CHAR_IMG = pygame.image.load('src/character.png')  # ensure this file exists
+# Scale character to ~1/3 screen width
 CHAR_W = WIDTH // 2.5
 CHAR_H = int(CHAR_IMG.get_height() * (CHAR_W / CHAR_IMG.get_width()))
 CHAR_IMG = pygame.transform.scale(CHAR_IMG, (CHAR_W, CHAR_H))
 
 # Load assets
 BUBBLE_COLORS = [(135, 206, 250), (100, 149, 237), (173, 216, 230), (176, 224, 230)]
-POP_SOUND = pygame.mixer.Sound(file='pop.mp3')
+POP_SOUND = pygame.mixer.Sound(file='src/pop.mp3')
 
 # Fonts
 pygame.font.init()
@@ -177,11 +182,12 @@ pygame.display.flip()
 pygame.time.delay(3000)
 pygame.quit()
 
-# Save CSV
+# Save CSV inside logs folder
 ts = datetime.now().strftime("%Y%m%d_%H%M%S")
-with open(f"reaction_times_{ts}.csv", "w", newline='') as f:
+filename = os.path.join(LOG_DIR, f"reaction_times_{ts}.csv")
+with open(filename, "w", newline='') as f:
     w = csv.DictWriter(f, ["x","y","reaction_time_sec","timestamp","status"])
     w.writeheader()
     w.writerows(reaction_data)
 
-print(f"Saved {len(reaction_data)} reactions.")
+print(f"Saved {len(reaction_data)} reactions to {filename}.")
