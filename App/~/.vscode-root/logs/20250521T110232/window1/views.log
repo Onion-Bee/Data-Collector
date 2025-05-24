@@ -31,3 +31,5 @@
 2025-05-21 11:02:59.875 [info] Removed views:workbench.view.testing from workbench.view.extension.test
 2025-05-21 11:02:59.928 [info] Added views:workbench.view.testing in workbench.view.extension.test
 2025-05-21 11:03:00.112 [info] Added views:workbench.scm.history in workbench.view.scm
+2025-05-21 17:58:39.083 [info] Removed views:workbench.scm.history from workbench.view.scm
+2025-05-21 17:58:39.085 [info] Removed views:workbench.view.testing from workbench.view.extension.test

@@ -4,3 +4,4 @@
 2025-05-21 11:03:02.624 [info] update#setState checking for updates
 2025-05-21 11:03:02.627 [info] update#setState available for download
 2025-05-21 11:31:26.327 [warning] No ptyHost heartbeat after 6 seconds
+2025-05-21 17:58:39.136 [info] Extension host with pid 19454 exited with code: 0, signal: unknown.
