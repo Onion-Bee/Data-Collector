@@ -1,28 +1,31 @@
 import subprocess
 import sys
-import threading
 import time
 
-#Start head.py as a background thread
+def run_with_head_monitor(script_name):
+    # Start head_monitor.py
+    head_proc = subprocess.Popen([sys.executable, "head_monitor.py"])
+    try:
+        # Run the target script
+        subprocess.run([sys.executable, script_name], check=True)
+    finally:
+        # Terminate head_monitor.py after the script
+        head_proc.terminate()
+        head_proc.wait()
+        time.sleep(1)  # Small buffer time between scripts
 
-head_proc = subprocess.Popen([sys.executable, "head_monitor.py"])
+# Run info.py (no head monitor needed)
+subprocess.run([sys.executable, "info.py"], check=True)
 
-try:
-    # Run the Kid Info and M-CHAT-RF script
-    subprocess.run([sys.executable, "info.py"], check=True)
+# Run game.py with head monitor
+run_with_head_monitor("game.py")
 
-    # Run the Bubble Pop Game
+# Run name.py with head monitor
+run_with_head_monitor("name.py")
 
-    subprocess.run([sys.executable, "game.py"], check=True)
+# Run video_player.py with head monitor
+subprocess.run([sys.executable, "video_player.py"], check=True)
 
-    subprocess.run([sys.executable, "name.py"], check=True)
-    # Wait a short time if needed or do other tasks here
-    subprocess.run([sys.executable, "video_player.py"], check=True)
-    time.sleep(2)
+# Run the OpenFace batch script after everything
+#subprocess.run([sys.executable, "run_openface_batch.py"], check=True)
 
-finally:
-    # Ensure head.py is terminated when the other scripts completeAdd commentMore actions
-    head_proc.terminate()
-    head_proc.wait() 
-    time.sleep(1)
-    subprocess.run([sys.executable, "run_openface_batch.py"], check=True)

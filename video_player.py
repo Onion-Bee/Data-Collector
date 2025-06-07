@@ -1,10 +1,12 @@
 import cv2
 import os
+import sys
+import subprocess
 import numpy as np
 from moviepy.video.io.VideoFileClip import VideoFileClip
 import pygame
 import time
-import math 
+import math
 
 VIDEO_FOLDER = "videos"
 VIDEO_EXTENSIONS = ('.mp4', '.avi', '.mov', '.mkv')
@@ -15,7 +17,11 @@ SKIP_OVERLAY_DURATION = 1.5
 arrow_trail = []
 
 def get_video_files(folder):
-    return [os.path.join(folder, f) for f in os.listdir(folder) if f.lower().endswith(VIDEO_EXTENSIONS)]
+    return [
+        os.path.join(folder, f)
+        for f in os.listdir(folder)
+        if f.lower().endswith(VIDEO_EXTENSIONS)
+    ]
 
 def apply_fade(frame, frame_index, total_frames, fps, fade_in, fade_out):
     fade_frames = int(TRANSITION_DURATION * fps)
@@ -26,7 +32,6 @@ def apply_fade(frame, frame_index, total_frames, fps, fade_in, fade_out):
         alpha = (total_frames - frame_index - 1) / fade_frames
     return (frame.astype(np.float32) * alpha).clip(0, 255).astype(np.uint8)
 
-
 arrow_trail = []  # Keep this global or accessible for tracking
 
 def draw_arrow(img, pos_x, pos_y, size=100, color=(255, 105, 180), thickness=18):
@@ -34,7 +39,9 @@ def draw_arrow(img, pos_x, pos_y, size=100, color=(255, 105, 180), thickness=18)
 
     current_time = time.time()
     arrow_trail.append((pos_x, pos_y, current_time))
-    arrow_trail = [(x, y, t) for (x, y, t) in arrow_trail if current_time - t < 0.6]
+    arrow_trail = [
+        (x, y, t) for (x, y, t) in arrow_trail if current_time - t < 0.6
+    ]
 
     # Draw fading trail
     for tx, ty, t in arrow_trail:
@@ -42,7 +49,14 @@ def draw_arrow(img, pos_x, pos_y, size=100, color=(255, 105, 180), thickness=18)
         trail_color = tuple(int(c * alpha) for c in color)
         trail_thickness = max(2, int(thickness * alpha))
 
-        cv2.line(img, (tx, ty), (tx + size, ty), trail_color, trail_thickness, lineType=cv2.LINE_AA)
+        cv2.line(
+            img,
+            (tx, ty),
+            (tx + size, ty),
+            trail_color,
+            trail_thickness,
+            lineType=cv2.LINE_AA,
+        )
 
         head_len = 40
         head_width = 40
@@ -58,7 +72,9 @@ def draw_arrow(img, pos_x, pos_y, size=100, color=(255, 105, 180), thickness=18)
 
     start_point = (pos_x, pos_y)
     end_point = (pos_x + size, pos_y)
-    cv2.line(img, start_point, end_point, arrow_color, thickness, lineType=cv2.LINE_AA)
+    cv2.line(
+        img, start_point, end_point, arrow_color, thickness, lineType=cv2.LINE_AA
+    )
 
     head_len = 40
     head_width = 40
@@ -85,8 +101,10 @@ def draw_arrow(img, pos_x, pos_y, size=100, color=(255, 105, 180), thickness=18)
     cv2.circle(img, start_point, radius_large, arrow_color, thickness_large, lineType=cv2.LINE_AA)
 
     sparkle_positions = [
-        (pos_x - 40, pos_y - 30), (pos_x + size // 2, pos_y - 50),
-        (pos_x + size // 2, pos_y + 50), (pos_x + size + 30, pos_y + 30)
+        (pos_x - 40, pos_y - 30),
+        (pos_x + size // 2, pos_y - 50),
+        (pos_x + size // 2, pos_y + 50),
+        (pos_x + size + 30, pos_y + 30),
     ]
     for sx, sy in sparkle_positions:
         cv2.circle(img, (sx, sy), 6, (255, 255, 255), -1, lineType=cv2.LINE_AA)
@@ -125,10 +143,28 @@ def slide_to_next_interaction(window_name, window_width, window_height):
         text_y = 70
 
         # Draw shadow (black) slightly offset for better readability
-        cv2.putText(frame, text, (text_x + 2, text_y + 2), font, font_scale, (0, 0, 0), thickness + 2, lineType=cv2.LINE_AA)
+        cv2.putText(
+            frame,
+            text,
+            (text_x + 2, text_y + 2),
+            font,
+            font_scale,
+            (0, 0, 0),
+            thickness + 2,
+            lineType=cv2.LINE_AA,
+        )
 
         # Draw main white text on top
-        cv2.putText(frame, text, (text_x, text_y), font, font_scale, (255, 255, 255), thickness, lineType=cv2.LINE_AA)
+        cv2.putText(
+            frame,
+            text,
+            (text_x, text_y),
+            font,
+            font_scale,
+            (255, 255, 255),
+            thickness,
+            lineType=cv2.LINE_AA,
+        )
 
         cv2.imshow(window_name, frame)
 
@@ -137,7 +173,7 @@ def slide_to_next_interaction(window_name, window_width, window_height):
             return False
         if arrow_x[0] > int(window_width * 0.8):
             return True
-        
+
 def thanks_for_watching_screen(window_name, window_width, window_height, duration=3.0, fade_out_duration=2.0):
     """
     Show a 'Thanks for watching' message centered on screen.
@@ -166,8 +202,16 @@ def thanks_for_watching_screen(window_name, window_width, window_height, duratio
 
         # Create transparent overlay
         overlay = img.copy()
-        cv2.putText(overlay, message, (text_x, text_y), font, font_scale,
-                    (255, 255, 255), thickness, lineType=cv2.LINE_AA)
+        cv2.putText(
+            overlay,
+            message,
+            (text_x, text_y),
+            font,
+            font_scale,
+            (255, 255, 255),
+            thickness,
+            lineType=cv2.LINE_AA,
+        )
 
         # Blend with alpha for fade out effect
         cv2.addWeighted(overlay, alpha, img, 1 - alpha, 0, img)
@@ -196,7 +240,6 @@ def play_video(video_path, fade_in=True, fade_out=True):
 
     cv2.namedWindow("Video Player", cv2.WINDOW_NORMAL)
     cv2.setWindowProperty("Video Player", cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
-
 
     playback_time = 0.0
     last_time = time.time()
@@ -247,7 +290,7 @@ def play_video(video_path, fade_in=True, fade_out=True):
         background = np.zeros((window_height, window_width, 3), dtype=np.uint8)
         y_offset = (window_height - new_height) // 2
         x_offset = (window_width - new_width) // 2
-        background[y_offset:y_offset + new_height, x_offset:x_offset + new_width] = resized_frame
+        background[y_offset : y_offset + new_height, x_offset : x_offset + new_width] = resized_frame
 
         if skip_overlay and (time.time() - skip_overlay_start) < SKIP_OVERLAY_DURATION:
             overlay_text = skip_overlay
@@ -257,9 +300,22 @@ def play_video(video_path, fade_in=True, fade_out=True):
             text_size, _ = cv2.getTextSize(overlay_text, font, font_scale, thickness)
             text_x = (window_width - text_size[0]) // 2
             text_y = window_height // 5
-            cv2.rectangle(background, (text_x - 10, text_y - text_size[1] - 10),
-                          (text_x + text_size[0] + 10, text_y + 10), (0, 0, 0), cv2.FILLED)
-            cv2.putText(background, overlay_text, (text_x, text_y), font, font_scale, (255, 255, 255), thickness)
+            cv2.rectangle(
+                background,
+                (text_x - 10, text_y - text_size[1] - 10),
+                (text_x + text_size[0] + 10, text_y + 10),
+                (0, 0, 0),
+                cv2.FILLED,
+            )
+            cv2.putText(
+                background,
+                overlay_text,
+                (text_x, text_y),
+                font,
+                font_scale,
+                (255, 255, 255),
+                thickness,
+            )
 
         cv2.imshow("Video Player", background)
 
@@ -349,6 +405,7 @@ def play_video(video_path, fade_in=True, fade_out=True):
     return True
 
 def main():
+    # Gather all video files in the playlist
     videos = get_video_files(VIDEO_FOLDER)
     if not videos:
         print("No videos found in the folder.")
@@ -359,11 +416,24 @@ def main():
     while current_video_idx < len(videos):
         video = videos[current_video_idx]
         print(f"Playing: {os.path.basename(video)}")
+
+        # 1) Launch head_monitor.py before starting playback
+        head_proc = subprocess.Popen([sys.executable, "head_monitor.py"])
+        print(f"[HEAD MONITOR] Started for '{video}' → PID={head_proc.pid}")
+
+        # 2) Play the video (blocks until video ends or user exits/next/prev)
         action = play_video(video, fade_in=True, fade_out=True)
 
+        # 3) As soon as playback returns, terminate head_monitor.py
+        head_proc.terminate()
+        head_proc.wait()
+        print(f"[HEAD MONITOR] Terminated for '{video}' → PID={head_proc.pid}")
+        time.sleep(0.5)  # Small buffer to ensure unique filenames
+
+        # 4) Handle user action/playlist logic
         if action == "next":
             current_video_idx += 1
-            # If last video finished with "next", show thanks screen and exit
+            # If this was the last video, show a “Thanks for watching” screen
             if current_video_idx >= len(videos):
                 cv2.namedWindow("Video Player", cv2.WINDOW_NORMAL)
                 cv2.setWindowProperty("Video Player", cv2.WND_PROP_FULLSCREEN, cv2.WINDOW_FULLSCREEN)
@@ -372,13 +442,17 @@ def main():
                 thanks_for_watching_screen("Video Player", w_width, w_height)
                 cv2.destroyAllWindows()
                 break
+
         elif action == "prev":
             current_video_idx = max(0, current_video_idx - 1)
-        elif action is False:
-            break
-        else:
-            current_video_idx += 1
 
+        elif action is False:
+            # User pressed 'q' or closed window; exit completely
+            break
+
+        else:
+            # If play_video returned True (natural end without “next/prev”), move forward
+            current_video_idx += 1
 
     print("All videos played once. Exiting.")
 
