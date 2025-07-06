@@ -13,13 +13,10 @@ ACCENT_COLOR = "#E74C3C"
 FONT_NAME = "Segoe UI"
 SCQ_THRESHOLD = 15  # Total score threshold for further evaluation
 LOG_DIR = "logs"
+CURRENT_FOLDER_FILE = os.path.join(LOG_DIR, "current_folder.txt")
 
 # Ensure logs directory exists
 os.makedirs(LOG_DIR, exist_ok=True)
-
-# ---------- Data Files ----------
-INFO_CSV = os.path.join(LOG_DIR, "kid_info.csv")
-RESULTS_CSV = os.path.join(LOG_DIR, "scq_results.csv")
 
 # ---------- SCQ Questions and Scoring ----------
 SCQ_QUESTIONS = [
@@ -65,17 +62,16 @@ SCQ_QUESTIONS = [
     "Does she/he have any unusual fears or anxieties?"
 ]
 
-# Autism-indicative response for each question ("Yes" or "No")
 SCQ_AUTISM_RESPONSE = [
-    "No", "No", "No", "No", "No", "No",
-    "Yes", "No", "No", "No",
-    "No", "No", "No", "No", "No",
-    "No", "No", "No", "No", "No",
-    "Yes", "Yes", "Yes", "Yes", "Yes",
-    "Yes", "Yes", "Yes", "Yes",
-    "Yes", "Yes", "Yes", "Yes", "Yes",
-    "Yes", "Yes", "Yes", "Yes",
-    "Yes", "Yes"
+    "No", "No", "No", "No", "No", "No",   # Q1-6
+    "Yes", "No", "No", "No",               # Q7-10
+    "No", "No", "No", "No", "No",       # Q11-15
+    "No", "No", "No", "No", "No",       # Q16-20
+    "Yes", "Yes", "Yes", "Yes", "Yes",  # Q21-25
+    "Yes", "Yes", "Yes", "Yes",           # Q26-29
+    "Yes", "Yes", "Yes", "Yes", "Yes",  # Q30-34
+    "Yes", "Yes", "Yes", "Yes",           # Q35-38
+    "Yes", "Yes"                              # Q39-40
 ]
 
 # ---------- Helper Functions ----------
@@ -89,7 +85,7 @@ def save_to_csv(file_path, data_dict):
 
 # ---------- Info Page ----------
 class InfoPage(QtWidgets.QWidget):
-    submitted = QtCore.pyqtSignal(dict)
+    submitted = QtCore.pyqtSignal(str, dict)
 
     def __init__(self):
         super().__init__()
@@ -145,27 +141,38 @@ class InfoPage(QtWidgets.QWidget):
         layout.addWidget(submit_btn)
 
     def on_submit(self):
-        name = self.name_input.text().strip()
+        name = self.name_input.text().strip().replace(' ', '_')
         age = str(self.age_input.value())
         gender = self.gender_input.currentText()
         if not name:
             self.status_label.setText("Please enter the child's name.")
             self.status_label.setStyleSheet("color: red;")
             return
+        # Create child-specific folder
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        folder_name = f"{name}_{timestamp}"
+        child_dir = os.path.join(LOG_DIR, folder_name)
+        os.makedirs(child_dir, exist_ok=True)
+        # Write current folder
+        with open(CURRENT_FOLDER_FILE, 'w') as cf:
+            cf.write(folder_name)
+        # Save child info CSV inside folder
         info = {"name": name, "age": age, "gender": gender, "timestamp": datetime.now().isoformat()}
-        save_to_csv(INFO_CSV, info)
+        info_csv = os.path.join(child_dir, "kid_info.csv")
+        save_to_csv(info_csv, info)
+
         self.status_label.setText("Information saved. Proceeding to questionnaire...")
         self.status_label.setStyleSheet(f"color: {ACCENT_COLOR};")
-        QtCore.QTimer.singleShot(1000, lambda: self.submitted.emit(info))
+        QtCore.QTimer.singleShot(1000, lambda: self.submitted.emit(child_dir, info))
 
 # ---------- SCQ Questionnaire Page ----------
 class QuestionnairePage(QtWidgets.QWidget):
-    finished = QtCore.pyqtSignal(int, dict, dict)
+    finished = QtCore.pyqtSignal(int, dict, str)
 
-    def __init__(self, questions, kid_info):
+    def __init__(self, questions, child_dir):
         super().__init__()
         self.questions = questions
-        self.kid_info = kid_info
+        self.child_dir = child_dir
         self.vars = []
         self.setup_ui()
 
@@ -179,11 +186,6 @@ class QuestionnairePage(QtWidgets.QWidget):
         title.setStyleSheet(f"color: {PRIMARY_COLOR}; margin-bottom: 20px;")
         title.setAlignment(QtCore.Qt.AlignCenter)
         layout.addWidget(title)
-
-        info_lbl = QtWidgets.QLabel(f"Child: {self.kid_info['name']} | Age: {self.kid_info['age']} | Gender: {self.kid_info['gender']}")
-        info_lbl.setFont(QtGui.QFont(FONT_NAME, 12))
-        info_lbl.setAlignment(QtCore.Qt.AlignCenter)
-        layout.addWidget(info_lbl)
 
         scroll = QtWidgets.QScrollArea()
         scroll.setWidgetResizable(True)
@@ -234,7 +236,7 @@ class QuestionnairePage(QtWidgets.QWidget):
                    for i, grp in enumerate(self.vars)}
         score = sum(1 for i, resp in enumerate(answers.values())
                     if resp == SCQ_AUTISM_RESPONSE[i])
-        self.finished.emit(score, answers, self.kid_info)
+        self.finished.emit(score, answers, self.child_dir)
 
 # ---------- Main Application ----------
 class SCQApp(QtWidgets.QStackedWidget):
@@ -250,28 +252,28 @@ class SCQApp(QtWidgets.QStackedWidget):
         self.addWidget(self.info_page)
         self.showMaximized()
 
-    def start_questionnaire(self, kid_info):
-        self.question_page = QuestionnairePage(SCQ_QUESTIONS, kid_info)
+    def start_questionnaire(self, child_dir, kid_info):
+        self.question_page = QuestionnairePage(SCQ_QUESTIONS, child_dir)
         self.question_page.finished.connect(self.handle_finish)
         self.addWidget(self.question_page)
         self.setCurrentWidget(self.question_page)
 
-    def handle_finish(self, score, answers, kid_info):
+    def handle_finish(self, score, answers, child_dir):
         outcome = "Further evaluation recommended" if score >= SCQ_THRESHOLD else "Screening indicates low risk"
+        results_csv = os.path.join(child_dir, "scq_results.csv")
         record = {
             "timestamp": datetime.now().isoformat(),
-            "name": kid_info['name'],
-            "age": kid_info['age'],
-            "gender": kid_info['gender'],
+            "name": os.path.basename(child_dir).rsplit('_', 1)[0],
             "scq_score": score,
             "outcome": outcome,
             "answers": json.dumps(answers)
         }
-        save_to_csv(RESULTS_CSV, record)
+        save_to_csv(results_csv, record)
         QtWidgets.QMessageBox.information(self, "SCQ Result", f"Score: {score}\nOutcome: {outcome}")
         self.close()
 
 # ---------- Entry Point ----------
+
 def main():
     app = QtWidgets.QApplication(sys.argv)
     app.setStyle("Fusion")
