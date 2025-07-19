@@ -27,5 +27,5 @@ run_with_head_monitor("name.py")
 subprocess.run([sys.executable, "video_player.py"], check=True)
 
 # Run the OpenFace batch script after everything
-#subprocess.run([sys.executable, "run_openface_batch.py"], check=True)
+subprocess.run([sys.executable, "run_openface_batch.py"], check=True)
 
